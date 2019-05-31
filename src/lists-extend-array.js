@@ -26,6 +26,10 @@
 	'TextTrackList',
 	'TouchList',
 	'SpeechGrammarList',
+	'HTMLAllCollection',
+	'HTMLCollection',
+	'HTMLFormControlsCollection',
+	'HTMLOptionsCollection',
 ].forEach( List=> {
 	if( globalThis[List] )
 	{
