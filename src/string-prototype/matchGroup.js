@@ -35,9 +35,11 @@
  *    returns
  *       { entirety:'How are you', predicate:'are', object:'you', }
  */
-String.prototype.matchGroup= function( regexp, group=0, ){
-	return getFromMatches( this.match( regexp, ), group, );
-};
+Object.defineProperty( String.prototype, 'matchGroup', {
+	get( regexp, group=0, ){
+		return getFromMatches( this.match( regexp, ), group, );
+	},
+}, );
 
 const getFromMatches= ( matches, group, )=> {
 	
