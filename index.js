@@ -9,5 +9,6 @@ import './src/array-prototype/better-reduce.js';
 import './src/map-and-set/map-toObject.js';
 import './src/map-and-set/better-set-and-add.js';
 import './src/map-and-set/getOrSet.js';
+import './src/map-and-set/reduce-and-map-and-mapAndFilter.js';
 import './src/event-target-prototype/listener-control.js';
 import './src/math.js';
