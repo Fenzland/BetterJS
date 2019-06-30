@@ -5,6 +5,7 @@ import './src/string-prototype/toCamelCase.js';
 import './src/array-prototype/findLastIndex-and-findLast.js';
 import './src/array-prototype/mapAndFilter.js';
 import './src/array-prototype/implode.js';
+import './src/array-prototype/better-reduce.js';
 import './src/map-and-set/map-toObject.js';
 import './src/map-and-set/better-set-and-add.js';
 import './src/map-and-set/getOrSet.js';
