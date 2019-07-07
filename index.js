@@ -11,4 +11,5 @@ import './src/map-and-set/better-set-and-add.js';
 import './src/map-and-set/getOrSet.js';
 import './src/map-and-set/reduce-and-map-and-mapAndFilter.js';
 import './src/event-target-prototype/listener-control.js';
+import './src/number.js';
 import './src/math.js';
