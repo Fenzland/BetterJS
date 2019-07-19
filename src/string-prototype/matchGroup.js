@@ -36,7 +36,7 @@
  *       { entirety:'How are you', predicate:'are', object:'you', }
  */
 Object.defineProperty( String.prototype, 'matchGroup', {
-	get( regexp, group=0, ){
+	value( regexp, group=0, ){
 		return getFromMatches( this.match( regexp, ), group, );
 	},
 }, );
