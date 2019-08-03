@@ -17,5 +17,6 @@ import './src/map-and-set/pop.js';
 import './src/map-and-set/reduce-and-map-and-mapAndFilter.js';
 import './src/event-target-prototype/listener-control.js';
 import './src/object/deeplyGet.js';
+import './src/object/deeplyAssign.js';
 import './src/number.js';
 import './src/math.js';
