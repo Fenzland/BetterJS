@@ -1,5 +1,5 @@
 
-Object.defineProperty( Map.prototype, 'reduce', {
+Reflect.defineProperty( Map.prototype, 'reduce', {
 	value( callback, initialValue=undefined, ){
 		let result= initialValue;
 		
@@ -9,7 +9,7 @@ Object.defineProperty( Map.prototype, 'reduce', {
 	},
 }, );
 
-Object.defineProperty( Set.prototype, 'reduce', {
+Reflect.defineProperty( Set.prototype, 'reduce', {
 	value( callback, initialValue=undefined, ){
 		let result= initialValue;
 		
@@ -19,7 +19,7 @@ Object.defineProperty( Set.prototype, 'reduce', {
 	},
 }, );
 
-Object.defineProperty( Map.prototype, 'map', {
+Reflect.defineProperty( Map.prototype, 'map', {
 	value( callback, ){
 		const result= [];
 		
@@ -29,7 +29,7 @@ Object.defineProperty( Map.prototype, 'map', {
 	},
 }, );
 
-Object.defineProperty( Set.prototype, 'map', {
+Reflect.defineProperty( Set.prototype, 'map', {
 	value( callback, ){
 		const result= [];
 		
@@ -39,7 +39,7 @@ Object.defineProperty( Set.prototype, 'map', {
 	},
 }, );
 
-Object.defineProperty( Map.prototype, 'mapAndFilter', {
+Reflect.defineProperty( Map.prototype, 'mapAndFilter', {
 	value( mapper, filter=(item=> item !== undefined), ){
 		return this.reduce( ( result, item, ...rest )=> {
 			const mapped= mapper( item, ...rest, );
@@ -52,7 +52,7 @@ Object.defineProperty( Map.prototype, 'mapAndFilter', {
 	},
 }, );
 
-Object.defineProperty( Set.prototype, 'mapAndFilter', {
+Reflect.defineProperty( Set.prototype, 'mapAndFilter', {
 	value( mapper, filter=(item=> item !== undefined), ){
 		return this.reduce( ( result, item, ...rest )=> {
 			const mapped= mapper( item, ...rest, );

@@ -20,12 +20,12 @@
 	};
 	
 	[ Object, String, Number, Symbol, Boolean, Function, ].forEach(
-		constructor=> Object.defineProperty( constructor, Symbol.hasInstance, {
+		constructor=> Reflect.defineProperty( constructor, Symbol.hasInstance, {
 			value: hasInstanceOfType,
 		}, ),
 	);
 	
-	Object.defineProperty( Array, Symbol.hasInstance, {
+	Reflect.defineProperty( Array, Symbol.hasInstance, {
 		value: instance=> Array.isArray( instance, ),
 	}, );
 }

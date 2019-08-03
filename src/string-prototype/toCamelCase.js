@@ -6,7 +6,7 @@
  * 
  * @return (string)
  */
-Object.defineProperty( String.prototype, 'toCamelCase', {
+Reflect.defineProperty( String.prototype, 'toCamelCase', {
 	value( ucfirst=false, wordDelimiter='_', ){
 		return this.toLowerCase().split( wordDelimiter, ).map( ( word, index, )=> {
 			if( index > 0 || ucfirst )

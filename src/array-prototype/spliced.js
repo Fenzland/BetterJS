@@ -2,7 +2,7 @@
 /**
  * works like splice, but return a new array rather then modify this array.
  */
-Object.defineProperty( Array.prototype, 'spliced', {
+Reflect.defineProperty( Array.prototype, 'spliced', {
 	value( start, deleteCount=Infinity, ...items ){
 		const newbee= [ ...this, ];
 		

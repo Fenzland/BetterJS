@@ -1,5 +1,5 @@
 
-Object.defineProperty( Array.prototype, 'findLastIndex', {
+Reflect.defineProperty( Array.prototype, 'findLastIndex', {
 	value( predicate, context, ){
 		
 		for( let I= this.length; --I >= 0; )
@@ -14,7 +14,7 @@ Object.defineProperty( Array.prototype, 'findLastIndex', {
 	},
 }, );
 
-Object.defineProperty( Array.prototype, 'findLast', {
+Reflect.defineProperty( Array.prototype, 'findLast', {
 	value( predicate, context, ){
 		return this[this.findLastIndex( predicate, context, )];
 	},

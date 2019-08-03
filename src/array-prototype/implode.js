@@ -6,7 +6,7 @@
  * 
  * @return (string)
  */
-Object.defineProperty( Array.prototype, 'implode', {
+Reflect.defineProperty( Array.prototype, 'implode', {
 	value( separator='', ){
 		return this.join( separator, );
 	},

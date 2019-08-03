@@ -4,7 +4,7 @@
 {
 	const origin= Array.prototype.reduce;
 	
-	Object.defineProperty( Array.prototype, 'reduce', {
+	Reflect.defineProperty( Array.prototype, 'reduce', {
 		value( callback, initialValue=undefined, ){
 			return origin.call( this, callback, initialValue, );
 		},

@@ -37,7 +37,7 @@ EventTarget.prototype.removeEventListener= function( type, listener, ...options 
 	return removeEventListener.call( this, type, listener, ...options, );
 };
 
-Object.defineProperty( EventTarget.prototype, 'removeEventListenersByType', {
+Reflect.defineProperty( EventTarget.prototype, 'removeEventListenersByType', {
 	value( type, ){
 		const map= listeners.get( this, );
 		if(!( map ))
@@ -55,7 +55,7 @@ Object.defineProperty( EventTarget.prototype, 'removeEventListenersByType', {
 	},
 }, );
 
-Object.defineProperty( EventTarget.prototype, 'removeAllEventListeners', {
+Reflect.defineProperty( EventTarget.prototype, 'removeAllEventListeners', {
 	value(){
 		const map= listeners.get( this, );
 		if(!( map ))

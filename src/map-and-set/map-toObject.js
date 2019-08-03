@@ -4,7 +4,7 @@
  * 
  * @return {}
  */
-Object.defineProperty( Map.prototype, 'toObject', {
+Reflect.defineProperty( Map.prototype, 'toObject', {
 	value(){
 		return [ ...this, ].reduce( ( result, [ key,value, ], )=> {
 			if( typeof key === 'string' )

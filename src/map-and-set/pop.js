@@ -1,5 +1,5 @@
 
-Object.defineProperty( Map.prototype, 'pop', {
+Reflect.defineProperty( Map.prototype, 'pop', {
 	value( key, ){
 		if( this.has( key, ) )
 		{
@@ -14,7 +14,7 @@ Object.defineProperty( Map.prototype, 'pop', {
 	},
 }, );
 
-Object.defineProperty( WeakMap.prototype, 'pop', {
+Reflect.defineProperty( WeakMap.prototype, 'pop', {
 	value( key, ){
 		if( this.has( key, ) )
 		{

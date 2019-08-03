@@ -7,7 +7,7 @@
 {
 	const origin= Map.prototype.set;
 	
-	Object.defineProperty( Map.prototype, 'set', {
+	Reflect.defineProperty( Map.prototype, 'set', {
 		value( key, value, ){
 			origin.call( this, key, value, );
 			
@@ -18,7 +18,7 @@
 {
 	const origin= WeakMap.prototype.set;
 	
-	Object.defineProperty( WeakMap.prototype, 'set', {
+	Reflect.defineProperty( WeakMap.prototype, 'set', {
 		value( key, value, ){
 			origin.call( this, key, value, );
 			
@@ -29,7 +29,7 @@
 {
 	const origin= Set.prototype.add;
 	
-	Object.defineProperty( Set.prototype, 'add', {
+	Reflect.defineProperty( Set.prototype, 'add', {
 		value( value, ){
 			origin.call( this, value, );
 			
@@ -40,7 +40,7 @@
 {
 	const origin= WeakSet.prototype.add;
 	
-	Object.defineProperty( WeakSet.prototype, 'add', {
+	Reflect.defineProperty( WeakSet.prototype, 'add', {
 		value( value, ){
 			origin.call( this, value, );
 			
