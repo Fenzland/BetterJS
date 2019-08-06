@@ -15,6 +15,7 @@ import './src/map-and-set/better-set-and-add.js';
 import './src/map-and-set/getOrSet.js';
 import './src/map-and-set/pop.js';
 import './src/map-and-set/map.js';
+import './src/map-and-set/flatMap.js';
 import './src/map-and-set/reduce.js';
 import './src/map-and-set/mapAndFilter.js';
 import './src/event-target-prototype/listener-control.js';
