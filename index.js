@@ -20,6 +20,7 @@ import './src/map-and-set/reduce.js';
 import './src/map-and-set/mapAndFilter.js';
 import './src/event-target-prototype/listener-control.js';
 import './src/object/isObject-and-isPureObject.js';
+import './src/object/areSame.js';
 import './src/object/deeplyGet.js';
 import './src/object/deeplyAssign.js';
 import './src/promise/any.js';
