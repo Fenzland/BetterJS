@@ -11,7 +11,7 @@
  * @typedef <result> <(string)|[]<result>|{:<result>}>
  * 
  * @example
- *       'How are you'.matchGroup( /\w+/, );
+ *       'How are you'.matchGroup( /\w+/, 0, );
  *    returns
  *       'How'
  * 
@@ -34,10 +34,21 @@
  *       'How are you'.matchGroup( /\w+\s(\w+)\s(?<who>\w+)$/, { entirety:0, predicate:1, object:'who', }, );
  *    returns
  *       { entirety:'How are you', predicate:'are', object:'you', }
+ * 
+ * @example
+ *       'How are you'.matchGroup( /\w+\s(\w+)\s(?<who>\w+)$/, );
+ *    returns
+ *       { 0:'How are you', 1:'are', 2:'you', who:'you', }
  */
 Reflect.defineProperty( String.prototype, 'matchGroup', {
-	value( regexp, group=0, ){
-		return getFromMatches( this.match( regexp, ), group, );
+	value( regexp, group=undefined, ){
+		const nativeMatches= this.match( regexp, )|| [];
+		const matches= { ...[ ...nativeMatches, ], ...(nativeMatches.groups|| {}), };
+		
+		if( group === undefined )
+			return matches;
+		else
+			return getFromMatches( matches, group, );
 	},
 }, );
 
