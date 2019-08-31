@@ -4,6 +4,7 @@ import './src/lists-extend-array.js';
 import './src/promisive-timeout-and-animation-frame.js';
 import './src/string-prototype/matchGroup.js';
 import './src/string-prototype/toCamelCase.js';
+import './src/string-prototype/find-index.js';
 import './src/array-prototype/get-and-subArray.js';
 import './src/array-prototype/finding.js';
 import './src/array-prototype/mapAndFilter.js';
