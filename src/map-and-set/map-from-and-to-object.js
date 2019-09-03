@@ -1,5 +1,20 @@
 
 /**
+ * Construct map from an object.
+ * 
+ * @return {}
+ */
+Reflect.defineProperty( Map, 'fromObject', {
+	value( object, ){
+		const map= new Map();
+		
+		Object.entries( object, ).forEach( ( [ key, value, ], )=> map.set( key, value, ), );
+		
+		return map;
+	},
+}, );
+
+/**
  * Convert map to primeval object. Only string key items will be included.
  * 
  * @return {}
