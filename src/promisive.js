@@ -28,6 +28,8 @@ globalThis.timeout= ( time, value, )=> new Promise( resolve=> setTimeout( ()=> r
  */
 if( globalThis.requestAnimationFrame )
 	globalThis.nextFrame= value=> new Promise( resolve=> requestAnimationFrame( ()=> resolve( value, ), ), );
+else
+	globalThis.nextFrame= value=> timeout( 1000/60, value, );
 
 /**
  * window.loaded()
