@@ -19,12 +19,14 @@ const removeEventListener= EventTarget.prototype.removeEventListener;
 
 Reflect.defineProperty( EventTarget.prototype, 'addEventListener', {
 	value( type, listener, ...options ){
-		const map= listeners.get( this, )|| (map=> (listeners.set( this, map, ), map))( new Map(), );
+		const context= this|| globalThis;
+		
+		const map= listeners.get( context, )|| (map=> (listeners.set( context, map, ), map))( new Map(), );
 		const set= map.get( type, )|| (set=> (map.set( type, set, ), set))( new Set(), );
 		
 		set.add( listener, );
 		
-		addEventListener.call( this, type, listener, ...options, );
+		addEventListener.call( context, type, listener, ...options, );
 		
 		return listener;
 	},
@@ -32,18 +34,22 @@ Reflect.defineProperty( EventTarget.prototype, 'addEventListener', {
 
 Reflect.defineProperty( EventTarget.prototype, 'removeEventListener', {
 	value( type, listener, ...options ){
-		const map= listeners.get( this, )|| (map=> (listeners.set( this, map, ), map))( new Map(), );
+		const context= this|| globalThis;
+		
+		const map= listeners.get( context, )|| (map=> (listeners.set( context, map, ), map))( new Map(), );
 		const set= map.get( type, )|| (set=> (map.set( type, set, ), set))( new Set(), );
 		
 		set.delete( listener, );
 		
-		return removeEventListener.call( this, type, listener, ...options, );
+		return removeEventListener.call( context, type, listener, ...options, );
 	},
 }, );
 
 Reflect.defineProperty( EventTarget.prototype, 'removeEventListenersByType', {
 	value( type, ){
-		const map= listeners.get( this, );
+		const context= this|| globalThis;
+		
+		const map= listeners.get( context, );
 		if(!( map ))
 			return;
 		
@@ -52,7 +58,7 @@ Reflect.defineProperty( EventTarget.prototype, 'removeEventListenersByType', {
 			return;
 		
 		set.forEach( listener=> {
-			removeEventListener.call( this, type, listener, );
+			removeEventListener.call( context, type, listener, );
 		}, );
 		
 		set.clear();
@@ -61,13 +67,15 @@ Reflect.defineProperty( EventTarget.prototype, 'removeEventListenersByType', {
 
 Reflect.defineProperty( EventTarget.prototype, 'removeAllEventListeners', {
 	value(){
-		const map= listeners.get( this, );
+		const context= this|| globalThis;
+		
+		const map= listeners.get( context, );
 		if(!( map ))
 			return;
 		
 		map.forEach( ( set, type, )=> {
 			set.forEach( listener=> {
-				removeEventListener.call( this, type, listener, );
+				removeEventListener.call( context, type, listener, );
 			}, );
 			
 			set.clear();
