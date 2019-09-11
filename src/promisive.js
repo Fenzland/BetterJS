@@ -1,5 +1,15 @@
 
 /**
+ * then()
+ * 
+ * @param time  (number)
+ * @param value <any#value>
+ * 
+ * @return <any#value>
+ */
+globalThis.then= ( callback=undefined, )=> callback? Promise.resolve().then( callback, ): Promise.resolve();
+
+/**
  * timeout()
  * 
  * @param time  (number)
