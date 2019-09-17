@@ -14,6 +14,7 @@ import './src/array-prototype/implode-and-feed.js';
 import './src/array-prototype/better-reduce.js';
 import './src/array-prototype/spliced.js';
 import './src/array-prototype/reversed.js';
+import './src/array-prototype/shuffle.js';
 import './src/map-and-set/map-from-and-to-object.js';
 import './src/map-and-set/better-set-and-add.js';
 import './src/map-and-set/getOrSet.js';
