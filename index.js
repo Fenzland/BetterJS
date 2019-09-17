@@ -2,6 +2,7 @@ import './src/throws.js';
 import './src/instanceof-types.js';
 import './src/lists-extend-array.js';
 import './src/promisive.js';
+import './src/getType.js';
 import './src/string-prototype/matchGroup.js';
 import './src/string-prototype/toCamelCase.js';
 import './src/string-prototype/find-index.js';
