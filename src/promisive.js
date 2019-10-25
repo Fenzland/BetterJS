@@ -11,7 +11,7 @@
  * 
  * @return <any#value>
  */
-globalThis.then= ( callback=undefined, )=> callback? Promise.resolve().then( callback, ): Promise.resolve();
+globalThis.then= async ( onresolved=undefined, )=> onresolved? Promise.resolve().then( onresolved, ): Promise.resolve();
 
 /**
  * timeout()
@@ -27,7 +27,7 @@ globalThis.then= ( callback=undefined, )=> callback? Promise.resolve().then( cal
  * 
  * @return <any#value>
  */
-globalThis.timeout= ( time, value, )=> new Promise( resolve=> setTimeout( ()=> resolve( value, ), time, ), );
+globalThis.timeout= async ( time, value, )=> new Promise( resolve=> void setTimeout( ()=> void resolve( value, ), time, ), );
 
 /**
  * nextFrame()
@@ -41,9 +41,9 @@ globalThis.timeout= ( time, value, )=> new Promise( resolve=> setTimeout( ()=> r
  * @return <any#value>
  */
 if( globalThis.requestAnimationFrame )
-	globalThis.nextFrame= value=> new Promise( resolve=> requestAnimationFrame( ()=> resolve( value, ), ), );
+	globalThis.nextFrame= async value=> new Promise( resolve=> void requestAnimationFrame( ()=> resolve( value, ), ), );
 else
-	globalThis.nextFrame= value=> timeout( 1000/60, value, );
+	globalThis.nextFrame= async value=> timeout( 1000/60, value, );
 
 /**
  * window.loaded()
@@ -56,4 +56,4 @@ else
  * @return {Event}  the event of window.onload
  */
 if( globalThis.window )
-	window.loaded= new Promise( resolve=> window.addEventListener( 'load', resolve, ), );
+	window.loaded= new Promise( resolve=> void window.addEventListener( 'load', resolve, ), );
