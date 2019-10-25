@@ -2,8 +2,8 @@
 /**
  * Find contents from this string by regex group.
  * 
- * @param regexp {RegExp}
- * @param group  <group>
+ * @param pattern <{RegExp}|(string)>
+ * @param group   <group>
  * 
  * @return <result>
  * 
@@ -41,8 +41,8 @@
  *       { 0:'How are you', 1:'are', 2:'you', who:'you', }
  */
 Reflect.defineProperty( String.prototype, 'matchGroup', {
-	value( regexp, group=undefined, ){
-		const nativeMatches= this.match( regexp, )|| [];
+	value( pattern, group=undefined, ){
+		const nativeMatches= this.match( pattern, )|| [];
 		const matches= { ...[ ...nativeMatches, ], ...(nativeMatches.groups|| {}), };
 		
 		if( group === undefined )
