@@ -67,8 +67,5 @@ const getFromMatches= ( matches, group, )=> {
 		return result;
 	}
 	else
-	if( typeof group === 'number' )
 		return matches&& matches[group];
-	else
-		return matches&& matches.groups&& matches.groups[group];
 }
