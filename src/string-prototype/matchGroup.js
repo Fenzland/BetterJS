@@ -61,7 +61,7 @@ const getFromMatches= ( matches, group, )=> {
 	{
 		const result= {};
 		
-		for( let key in group )
+		for( const key in group )
 			result[key]= getFromMatches( matches, group[key], );
 		
 		return result;

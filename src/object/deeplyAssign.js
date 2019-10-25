@@ -12,12 +12,12 @@ Reflect.defineProperty( Object, 'deeplyAssign', {
 		if(!( typeof target === 'object' && target ))
 			target= Object.assign( target, );
 		
-		for( let source of sources )
+		for( const source of sources )
 		{
 			if(!( typeof source === 'object' && source ))
 				return;
 			
-			for( let [ key, value, ] of Object.entries( source, ) )
+			for( const [ key, value, ] of Object.entries( source, ) )
 			{
 				if(!( typeof value === 'object' && value ))
 					target[key]= value;
