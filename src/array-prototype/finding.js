@@ -10,7 +10,7 @@ Reflect.defineProperty( Array.prototype, 'findLastIndex', {
 				return I;
 		}
 		
-		return NaN;
+		return -1;
 	},
 }, );
 
