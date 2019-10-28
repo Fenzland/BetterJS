@@ -20,7 +20,7 @@
 	};
 	
 	[ Object, String, Number, Symbol, Boolean, Function, ].forEach(
-		constructor=> Reflect.defineProperty( constructor, Symbol.hasInstance, {
+		constructor=> void Reflect.defineProperty( constructor, Symbol.hasInstance, {
 			value: hasInstanceOfType,
 		}, ),
 	);

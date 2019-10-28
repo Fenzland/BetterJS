@@ -2,13 +2,13 @@
 /**
  * Construct map from an object.
  * 
- * @return {}
+ * @return Map{}
  */
 Reflect.defineProperty( Map, 'fromObject', {
 	value( object, ){
 		const map= new Map();
 		
-		Object.entries( object, ).forEach( ( [ key, value, ], )=> map.set( key, value, ), );
+		Object.entries( object, ).forEach( ( [ key, value, ], )=> void map.set( key, value, ), );
 		
 		return map;
 	},
@@ -21,7 +21,7 @@ Reflect.defineProperty( Map, 'fromObject', {
  */
 Reflect.defineProperty( Map.prototype, 'toObject', {
 	value(){
-		return [ ...this, ].reduce( ( result, [ key,value, ], )=> {
+		return [ ...this, ].reduce( ( result, [ key, value, ], )=> {
 			if( typeof key === 'string' )
 				result[key]= value;
 			

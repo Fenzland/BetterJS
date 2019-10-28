@@ -1,4 +1,8 @@
 
+/**
+ * Better index finding, return NaN instead of -1 for not found.
+ */
+
 Reflect.defineProperty( String.prototype, 'idxOf', {
 	value( searchString, position=0, ){
 		const index= this.indexOf( searchString, position, );

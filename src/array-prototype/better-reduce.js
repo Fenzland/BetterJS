@@ -1,3 +1,4 @@
+
 /**
  * If initial value not given, use undefined, instead of erratically use the first item.
  */
