@@ -41,7 +41,9 @@ Reflect.defineProperty( EventTarget.prototype, 'removeEventListener', {
 		
 		set.delete( listener, );
 		
-		return removeEventListener.call( context, type, listener, ...options, );
+		removeEventListener.call( context, type, listener, ...options, );
+		
+		return listener;
 	},
 }, );
 
