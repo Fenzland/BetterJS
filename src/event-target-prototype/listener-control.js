@@ -1,3 +1,4 @@
+import '../map-and-set/getOrSet.js';
 
 /**
  * Changes:
@@ -21,8 +22,8 @@ Reflect.defineProperty( EventTarget.prototype, 'addEventListener', {
 	value( type, listener, ...options ){
 		const context= this|| globalThis;
 		
-		const map= listeners.get( context, )|| (map=> (listeners.set( context, map, ), map))( new Map(), );
-		const set= map.get( type, )|| (set=> (map.set( type, set, ), set))( new Set(), );
+		const map= listeners.getOrSet( context, ()=> new Map(), );
+		const set= map.getOrSet( type, ()=> new Set(), );
 		
 		set.add( listener, );
 		
@@ -36,8 +37,8 @@ Reflect.defineProperty( EventTarget.prototype, 'removeEventListener', {
 	value( type, listener, ...options ){
 		const context= this|| globalThis;
 		
-		const map= listeners.get( context, )|| (map=> (listeners.set( context, map, ), map))( new Map(), );
-		const set= map.get( type, )|| (set=> (map.set( type, set, ), set))( new Set(), );
+		const map= listeners.getOrSet( context, ()=> new Map(), );
+		const set= map.getOrSet( type, ()=> new Set(), );
 		
 		set.delete( listener, );
 		
@@ -82,6 +83,7 @@ Reflect.defineProperty( EventTarget.prototype, 'removeAllEventListeners', {
 			
 			set.clear();
 		}, );
+		
+		map.clear();
 	},
 }, );
-
