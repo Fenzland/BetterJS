@@ -26,9 +26,9 @@ Reflect.defineProperty( Object, 'deeplyAssign', {
 					target[key]= value;
 				else
 				if( Array.isArray( value, ) )
-					target[key]= deepAssign( [], value, );
+					target[key]= Object.deeplyAssign( [], value, );
 				else
-					target[key]= deepAssign( {}, value, );
+					target[key]= Object.deeplyAssign( {}, value, );
 			}
 		}
 		
