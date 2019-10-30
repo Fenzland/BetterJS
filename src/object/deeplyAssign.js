@@ -1,3 +1,4 @@
+import '../instanceof-types.js';
 
 /**
  * deeply version of Object.assign
@@ -9,23 +10,23 @@
  */
 Reflect.defineProperty( Object, 'deeplyAssign', {
 	value( target, ...sources ){
-		if(!( typeof target === 'object' && target ))
+		if(!( target instanceof Object ))
 			target= Object.assign( target, );
 		
 		for( const source of sources )
 		{
-			if(!( typeof source === 'object' && source ))
+			if(!( source instanceof Object ))
 				return;
 			
 			for( const [ key, value, ] of Object.entries( source, ) )
 			{
-				if(!( typeof value === 'object' && value ))
+				if(!( value instanceof Object ))
 					target[key]= value;
 				else
 				if( value instanceof Function )
 					target[key]= value;
 				else
-				if( Array.isArray( value, ) )
+				if( value instanceof Array )
 					target[key]= Object.deeplyAssign( [], value, );
 				else
 					target[key]= Object.deeplyAssign( {}, value, );
