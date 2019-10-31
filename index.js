@@ -31,6 +31,7 @@ import './src/object/deeplyAssign.js';
 import './src/string/compare.js';
 import './src/fp/pipe.js';
 import './src/fp/compose.js';
+import './src/fp/curry.js';
 import './src/promise/any.js';
 import './src/number.js';
 import './src/math.js';
