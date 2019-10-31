@@ -29,6 +29,7 @@ import './src/object/areSame.js';
 import './src/object/deeplyGet.js';
 import './src/object/deeplyAssign.js';
 import './src/string/compare.js';
+import './src/fp/pipe.js';
 import './src/promise/any.js';
 import './src/number.js';
 import './src/math.js';
