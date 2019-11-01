@@ -23,6 +23,7 @@ import './src/map-and-set/pop.js';
 import './src/map-and-set/map.js';
 import './src/map-and-set/flatMap.js';
 import './src/map-and-set/reduce.js';
+import './src/map-and-set/forEachAwait.js';
 import './src/map-and-set/mapAndFilter.js';
 import './src/event-target-prototype/listener-control.js';
 import './src/object/isObject-and-isPureObject.js';
