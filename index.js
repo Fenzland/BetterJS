@@ -1,3 +1,4 @@
+import './src/SyncPromise.js';
 import './src/expressional-error-control.js';
 import './src/instanceof-types.js';
 import './src/lists-extend-array.js';
