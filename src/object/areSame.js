@@ -81,7 +81,13 @@ Reflect.defineProperty( Object, 'areSame', {
 		&&
 			Object.isPureObject( valueB, )
 		&&
-			Object.areSame( Object.entries( valueA, ), Object.entries( valueB, ), )
+			(( keysA, keysB, )=> (
+				keysA.length === keysB.length
+			&&
+				new Set( [ ...keysA, ...keysB, ], ).size === keysA.length
+			&&
+				keysA.every( key=> Object.areSame( valueA[key], valueB[key], ), )
+			))( Object.keys( valueA, ), Object.keys( valueB, ) )
 		)
 	||
 		(
