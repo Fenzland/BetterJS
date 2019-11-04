@@ -2,6 +2,6 @@
 /**
  * expressional throw
  */
-globalThis.throws= e=> {
+globalThis.throws= ( e=(new Error()), )=> {
 	throw e;
 };
