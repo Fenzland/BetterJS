@@ -30,6 +30,7 @@ import './src/object/isObject-and-isPureObject.js';
 import './src/object/areSame.js';
 import './src/object/deeplyGet.js';
 import './src/object/deeplyAssign.js';
+import './src/object/hasProperty.js';
 import './src/string/compare.js';
 import './src/fp/pipe.js';
 import './src/fp/compose.js';
