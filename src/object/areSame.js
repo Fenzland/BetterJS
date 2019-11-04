@@ -11,45 +11,45 @@ import './isObject-and-isPureObject.js';
  * special cases:
  *   const a= 0;
  *   const b= -0;
- *   a === b                                    true
- *   Object.is( a, b, )                         false
- *   Object.areSame( a, b, )                    true
+ *   a === b                                                    true
+ *   Object.is( a, b, )                                         false
+ *   Object.areSame( a, b, )                                    true
  *   
  *   const a= NaN;
  *   const b= NaN;
- *   a === b                                    false
- *   Object.is( a, b, )                         true
- *   Object.areSame( a, b, )                    true
+ *   a === b                                                    false
+ *   Object.is( a, b, )                                         true
+ *   Object.areSame( a, b, )                                    true
  *   
  *   const a= Infinity;
  *   const b= -Infinity;
- *   a === b                                    false
- *   Object.is( a, b, )                         false
- *   Object.areSame( a, b, )                    true
+ *   a === b                                                    false
+ *   Object.is( a, b, )                                         false
+ *   Object.areSame( a, b, )                                    true
  *   
  *   const a= [ 0, 1, ];
  *   const b= [ 0, 1, ];
- *   a === b                                    false
- *   Object.is( a, b, )                         false
- *   Object.areSame( a, b, )                    true
+ *   a === b                                                    false
+ *   Object.is( a, b, )                                         false
+ *   Object.areSame( a, b, )                                    true
  *   
- *   const a= { a:1, };
- *   const b= { a:1, };
- *   a === b                                    false
- *   Object.is( a, b, )                         false
- *   Object.areSame( a, b, )                    true
+ *   const a= { a:1, b:0, };
+ *   const b= { b:0, a:1, };
+ *   a === b                                                    false
+ *   Object.is( a, b, )                                         false
+ *   Object.areSame( a, b, )                                    true
  *   
  *   const a= new Set( [ 0, 1, ], );
- *   const b= new Set( [ 0, 1, ], );
- *   a === b                                    false
- *   Object.is( a, b, )                         false
- *   Object.areSame( a, b, )                    true
+ *   const b= new Set( [ 1, 0, ], );
+ *   a === b                                                    false
+ *   Object.is( a, b, )                                         false
+ *   Object.areSame( a, b, )                                    true
  *   
- *   const a= new Map( [ [ 'a', 1, ], ], );
- *   const b= new Map( [ [ 'a', 1, ], ], );
- *   a === b                                    false
- *   Object.is( a, b, )                         false
- *   Object.areSame( a, b, )                    true
+ *   const a= new Map( [ [ 'a', 1, ], [ 'b', 0, ], ], );
+ *   const b= new Map( [ [ 'b', 0, ], [ 'a', 1, ], ], );
+ *   a === b                                                    false
+ *   Object.is( a, b, )                                         false
+ *   Object.areSame( a, b, )                                    true
  * 
  * @param  valueA <mixed>
  * @param  valueB <mixed>
