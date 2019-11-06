@@ -4,5 +4,11 @@
  * 
  * "array" for arraies
  * "null" for nulls
+ * "class" for class
  */
-globalThis.getType= value=> value === null? 'null': Array.isArray( value, )? 'array': typeof value;
+globalThis.getType= value=> (
+	value === null? 'null':
+	Array.isArray( value, )? 'array':
+	Function.isClass( value, )? 'class':
+	typeof value
+);
