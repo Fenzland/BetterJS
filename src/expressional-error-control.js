@@ -1,3 +1,4 @@
+import './SyncPromise.js';
 
 /**
  * expressional throw
