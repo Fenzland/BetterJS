@@ -1,6 +1,6 @@
 
 /**
- * check wheather a value is a class
+ * check whether a value is a class
  * 
  * @param  value <mixed>
  * 
