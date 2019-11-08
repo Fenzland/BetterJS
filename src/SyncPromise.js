@@ -34,8 +34,9 @@ class SyncPromise
 			this.#status= 'rejected';
 		}
 		
+		// if the callback is asynchronous, returns the async Promise
 		if( this.#value instanceof Promise )
-			throw new TypeError( 'SyncPromise resolver must not be asynchronous.', );
+			return this.#value;
 		
 		Promise.resolve().then( ()=> {
 			if( this.#status === 'rejected' && !this.#caught )
