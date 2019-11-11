@@ -44,7 +44,7 @@ class SyncPromise
 		}, );
 	}
 	
-	then( callback, catchCallback, )
+	then( callback=undefined, catchCallback=undefined, )
 	{
 		if( this.#status === 'resolved' )
 		{
@@ -67,12 +67,12 @@ class SyncPromise
 			throw new Error( 'cannot call .then(), .catch() or .finally() on a pending SyncPromise.', );
 	}
 	
-	catch( callback, )
+	catch( callback=undefined, )
 	{
 		return this.then( undefined, callback, );
 	}
 	
-	finally( callback, )
+	finally( callback=undefined, )
 	{
 		if( callback )
 			callback();
