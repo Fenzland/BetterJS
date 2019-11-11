@@ -11,7 +11,10 @@
  * 
  * @return <any#value>
  */
-globalThis.then= async ( onresolved=undefined, )=> onresolved? Promise.resolve().then( onresolved, ): Promise.resolve();
+globalThis.then= async ( onresolved=undefined, )=> (
+	onresolved === undefined? Promise.resolve():
+	new Promise( resolve=> resolve( onresolved, ), )
+);
 
 /**
  * timeout()
