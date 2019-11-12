@@ -53,7 +53,7 @@ Reflect.defineProperty( globalThis, 'nextFrame', { value:
 , }, );
 
 /**
- * window.loaded()
+ * window.loaded
  *  a window will only load once, so it should be a promise rather than an event
  * 
  * @usage
@@ -65,4 +65,34 @@ Reflect.defineProperty( globalThis, 'nextFrame', { value:
 if( globalThis.window )
 	Reflect.defineProperty( window, 'loaded', {
 		value: new Promise( resolve=> void window.addEventListener( 'load', resolve, ), ),
+	}, );
+
+/**
+ * window.beforeunloaded
+ *  a window will only beforeunload once, so it should be a promise rather than an event
+ * 
+ * @usage
+ *     await window.beforeunloaded;
+ *     window.beforeunloaded.then( ()=> { what to do after the window has beforeunloaded }, );
+ * 
+ * @return {Event}  the event of window.onbeforeunload
+ */
+if( globalThis.window )
+	Reflect.defineProperty( window, 'beforeunloaded', {
+		value: new Promise( resolve=> void window.addEventListener( 'beforeunload', resolve, ), ),
+	}, );
+
+/**
+ * window.unloaded
+ *  a window will only unload once, so it should be a promise rather than an event
+ * 
+ * @usage
+ *     await window.unloaded;
+ *     window.unloaded.then( ()=> { what to do after the window has unloaded }, );
+ * 
+ * @return {Event}  the event of window.onunload
+ */
+if( globalThis.window )
+	Reflect.defineProperty( window, 'unloaded', {
+		value: new Promise( resolve=> void window.addEventListener( 'unload', resolve, ), ),
 	}, );
