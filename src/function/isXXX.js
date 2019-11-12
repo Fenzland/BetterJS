@@ -13,7 +13,7 @@ Reflect.defineProperty( Function, 'isFunction', {
 		
 		const code= value.toString();
 		
-		return code.startsWith( 'class', ) || code.startsWith( 'async class', );
+		return !(code.startsWith( 'class', ) || code.startsWith( 'async class', ));
 	},
 }, );
 
@@ -31,7 +31,7 @@ Reflect.defineProperty( Function, 'isClass', {
 		
 		const code= value.toString();
 		
-		return !(code.startsWith( 'class', ) || code.startsWith( 'async class', ));
+		return code.startsWith( 'class', ) || code.startsWith( 'async class', );
 	},
 }, );
 
