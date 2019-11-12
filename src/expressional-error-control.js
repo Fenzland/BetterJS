@@ -3,11 +3,9 @@ import './SyncPromise.js';
 /**
  * expressional throw
  */
-globalThis.throws= ( e=(new Error()), )=> {
-	throw e;
-};
+Reflect.defineProperty( globalThis, 'throws', { value( e=(new Error()), ){ throw e; }, }, );
 
 /**
  * expressional tries
  */
-globalThis.tries= ( callback, )=> new SyncPromise( callback, );
+Reflect.defineProperty( globalThis, 'tries', { value:callback=> new SyncPromise( callback, ), }, );

@@ -91,4 +91,4 @@ class SyncPromise
 	}
 }
 
-globalThis.SyncPromise= SyncPromise;
+Reflect.defineProperty( globalThis, 'SyncPromise', { value:SyncPromise, }, );

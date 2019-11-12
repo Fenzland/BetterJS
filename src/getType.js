@@ -6,9 +6,9 @@
  * "null" for nulls
  * "class" for class
  */
-globalThis.getType= value=> (
+Reflect.defineProperty( globalThis, 'getType', { value: value=>
 	value === null? 'null':
 	Array.isArray( value, )? 'array':
 	Function.isClass( value, )? 'class':
 	typeof value
-);
+, }, );

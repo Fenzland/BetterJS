@@ -11,10 +11,12 @@
  * 
  * @return <any#value>
  */
-globalThis.then= async ( onresolved=undefined, )=> (
-	onresolved === undefined? Promise.resolve():
-	new Promise( resolve=> resolve( onresolved, ), )
-);
+Reflect.defineProperty( globalThis, 'then', {
+	value: async ( onresolved=undefined, )=>
+		onresolved === undefined? Promise.resolve():
+		new Promise( resolve=> resolve( onresolved, ), )
+	,
+}, );
 
 /**
  * timeout()
@@ -30,7 +32,11 @@ globalThis.then= async ( onresolved=undefined, )=> (
  * 
  * @return <any#value>
  */
-globalThis.timeout= async ( time, value, )=> new Promise( resolve=> void setTimeout( ()=> void resolve( value, ), time, ), );
+Reflect.defineProperty( globalThis, 'timeout', {
+	value: async ( time, value, )=>
+		new Promise( resolve=> void setTimeout( ()=> void resolve( value, ), time, ), )
+	,
+}, );
 
 /**
  * nextFrame()
@@ -43,10 +49,11 @@ globalThis.timeout= async ( time, value, )=> new Promise( resolve=> void setTime
  * 
  * @return <any#value>
  */
-if( globalThis.requestAnimationFrame )
-	globalThis.nextFrame= async value=> new Promise( resolve=> void requestAnimationFrame( ()=> resolve( value, ), ), );
-else
-	globalThis.nextFrame= async value=> timeout( 1000/60, value, );
+Reflect.defineProperty( globalThis, 'nextFrame', { value:
+	globalThis.requestAnimationFrame?
+		async value=> new Promise( resolve=> void requestAnimationFrame( ()=> resolve( value, ), ), ):
+	async value=> timeout( 1000/60, value, )
+, }, );
 
 /**
  * window.loaded()
@@ -59,4 +66,6 @@ else
  * @return {Event}  the event of window.onload
  */
 if( globalThis.window )
-	window.loaded= new Promise( resolve=> void window.addEventListener( 'load', resolve, ), );
+	Reflect.defineProperty( window, 'loaded', {
+		value: new Promise( resolve=> void window.addEventListener( 'load', resolve, ), ),
+	}, );
