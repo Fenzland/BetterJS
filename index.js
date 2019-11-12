@@ -3,7 +3,6 @@ import './src/expressional-error-control.js'; // DEP: SyncPromise.js
 import './src/instanceof-types.js';
 import './src/lists-extend-array.js';
 import './src/promisive.js';
-import './src/getType.js';
 import './src/global-constructors.js';
 import './src/string-prototype/matchGroup.js';
 import './src/string-prototype/toCamelCase.js';
@@ -35,6 +34,7 @@ import './src/object/deeplyGet.js';
 import './src/object/deeplyAssign.js';
 import './src/object/hasProperty.js';
 import './src/function/isXXX.js';
+import './src/getType.js'; // DEP: function/isXXX.js
 import './src/string/compare.js';
 import './src/fp/pipe.js';
 import './src/fp/compose.js';
