@@ -1,5 +1,19 @@
 import './function/isXXX.js';
 
+const betterType= ( value, type, )=>
+	value === null? 'null':
+	type === 'function'? (
+		Function.isClass( value, )? 'class':
+		'function'
+	):
+	type === 'object'? (
+		value instanceof Promise? 'promise':
+		Array.isArray( value, )? 'array':
+		'object'
+	):
+	type
+;
+
 /**
  * function instead of typeof
  * 
@@ -7,9 +21,4 @@ import './function/isXXX.js';
  * "null" for nulls
  * "class" for class
  */
-Reflect.defineProperty( globalThis, 'getType', { value: value=>
-	value === null? 'null':
-	Array.isArray( value, )? 'array':
-	Function.isClass( value, )? 'class':
-	typeof value
-, }, );
+Reflect.defineProperty( globalThis, 'getType', { value: value=> betterType( value, typeof value, ), }, );
