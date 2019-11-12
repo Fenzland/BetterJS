@@ -41,5 +41,6 @@ import './src/fp/compose.js';
 import './src/fp/curry.js';
 import './src/promise/any.js';
 import './src/promise/try.js'; // DEP: SyncPromise.js
+import './src/promise/make.js';
 import './src/number.js';
 import './src/math.js';
