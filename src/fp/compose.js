@@ -1,5 +1,3 @@
-import '../array-prototype/better-reduce.js';
-import '../array-prototype/reversed.js';
 
 Reflect.defineProperty( Function, 'pipe', {
 	value( ...functions ){
@@ -9,6 +7,6 @@ Reflect.defineProperty( Function, 'pipe', {
 
 Reflect.defineProperty( Function, 'compose', {
 	value( ...functions ){
-		return Function.pipe( ...functions.reversed(), );
+		return Function.pipe( ...[ ...functions, ].reverse(), );
 	},
 }, );
