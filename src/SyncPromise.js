@@ -48,7 +48,7 @@ class SyncPromise
 	{
 		if( this.#status === 'resolved' )
 		{
-			if( callback )
+			if( callback && typeof callback === 'function' )
 				return this.constructor.resolve( callback( this.#value, ), );
 			else
 				return this.constructor.resolve( this.#value, );
@@ -58,7 +58,7 @@ class SyncPromise
 		{
 			this.#caught= true;
 			
-			if( catchCallback )
+			if( catchCallback && typeof catchCallback === 'function' )
 				return this.constructor.resolve( catchCallback( this.#reason, ), );
 			else
 				return this.constructor.reject( this.#reason, );
@@ -74,7 +74,7 @@ class SyncPromise
 	
 	finally( callback=undefined, )
 	{
-		if( callback )
+		if( callback && typeof callback === 'function' )
 			callback();
 		
 		return this.then();
