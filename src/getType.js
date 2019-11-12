@@ -9,6 +9,11 @@ const betterType= ( value, type, )=>
 	type === 'object'? (
 		value instanceof Promise? 'promise':
 		Array.isArray( value, )? 'array':
+		value instanceof Map? 'map':
+		value instanceof Set? 'set':
+		value instanceof WeakMap? 'weak_map':
+		value instanceof WeakSet? 'weak_set':
+		globalThis.WeakRef && value instanceof WeakRef? 'weak_ref':
 		'object'
 	):
 	type
