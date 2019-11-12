@@ -6,7 +6,7 @@
  * 
  * @return (boolean)
  */
-Reflect.defineProperty( Function, 'isClass', {
+Reflect.defineProperty( Function, 'isFunction', {
 	value( value, ){
 		if( typeof value !== 'function' )
 			return false;
