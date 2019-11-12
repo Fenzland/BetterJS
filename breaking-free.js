@@ -23,6 +23,7 @@ import './src/map-and-set/flatMap.js';
 import './src/map-and-set/reduce.js';
 import './src/map-and-set/forEachAwait.js';
 import './src/map-and-set/mapAndFilter.js'; // DEP: map-and-set/reduce.js
+import './src/event-target-prototype/listener-control.breaking-free.js'; // DEP: map-and-set/getOrSet.js
 import './src/object/isObject-and-isPureObject.js';
 import './src/object/areSame.js'; // DEP: object/isObject-and-isPureObject.js
 import './src/object/deeplyGet.js';
