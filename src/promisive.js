@@ -12,10 +12,7 @@
  * @return <any#value>
  */
 Reflect.defineProperty( globalThis, 'then', {
-	value: async ( onresolved=undefined, )=>
-		onresolved === undefined? Promise.resolve():
-		new Promise( resolve=> resolve( onresolved, ), )
-	,
+	value: async ( onresolved=undefined, )=> Promise.resolve().then( onresolved, ),
 }, );
 
 /**
