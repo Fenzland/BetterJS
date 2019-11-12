@@ -1,4 +1,4 @@
-import { isReservedKey, } from '../utils/reserved-key.js';
+import { isReservedKey, } from '../../utils/reserved-key.js';
 
 /**
  * deeply get a item from nesting objects
