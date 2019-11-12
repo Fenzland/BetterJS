@@ -1,5 +1,5 @@
 import './src/SyncPromise.js';
-import './src/expressional-error-control.js';
+import './src/expressional-error-control.js'; // DEP: SyncPromise.js
 import './src/instanceof-types.js';
 import './src/lists-extend-array.js';
 import './src/promisive.js';
@@ -26,10 +26,10 @@ import './src/map-and-set/map.js';
 import './src/map-and-set/flatMap.js';
 import './src/map-and-set/reduce.js';
 import './src/map-and-set/forEachAwait.js';
-import './src/map-and-set/mapAndFilter.js';
-import './src/event-target-prototype/listener-control.js';
+import './src/map-and-set/mapAndFilter.js'; // DEP: map-and-set/reduce.js
+import './src/event-target-prototype/listener-control.js'; // DEP: map-and-set/getOrSet.js
 import './src/object/isObject-and-isPureObject.js';
-import './src/object/areSame.js';
+import './src/object/areSame.js'; // DEP: object/isObject-and-isPureObject.js
 import './src/object/deeplyGet.js';
 import './src/object/deeplyAssign.js';
 import './src/object/hasProperty.js';
@@ -39,6 +39,6 @@ import './src/fp/pipe.js';
 import './src/fp/compose.js';
 import './src/fp/curry.js';
 import './src/promise/any.js';
-import './src/promise/try.js';
+import './src/promise/try.js'; // DEP: SyncPromise.js
 import './src/number.js';
 import './src/math.js';
