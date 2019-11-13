@@ -5,11 +5,11 @@ const betterType= ( value, type, )=>
 	value === null? 'null':
 	type === 'function'? (
 		value.constructor === AsyncFunction? (
-			Function.isClass( value, )? 'async_class':
-			'async_function'
+			Function.isClass( value, )? 'async:class':
+			'async:function'
 		):
-		value.constructor === GeneratorFunction? 'generator_function':
-		value.constructor === AsyncGeneratorFunction? 'async_generator_function':
+		value.constructor === GeneratorFunction? 'generator:function':
+		value.constructor === AsyncGeneratorFunction? 'async:generator:function':
 		Function.isClass( value, )? 'class':
 		'function'
 	):
@@ -22,9 +22,9 @@ const betterType= ( value, type, )=>
 		value instanceof WeakSet? 'weakset':
 		globalThis.WeakRef && value instanceof WeakRef? 'weakref':
 		value.constructor.constructor? (
-			value.constructor.constructor === AsyncFunction? 'async_object':
+			value.constructor.constructor === AsyncFunction? 'async:object':
 			value.constructor.constructor === GeneratorFunction? 'generator':
-			value.constructor.constructor === AsyncGeneratorFunction? 'async_generator':
+			value.constructor.constructor === AsyncGeneratorFunction? 'async:generator':
 			'object'
 		):
 		'object'
