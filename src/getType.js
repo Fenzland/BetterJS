@@ -14,6 +14,11 @@ const betterType= ( value, type, )=>
 		'function'
 	):
 	type === 'object'? (
+		value instanceof Boolean? 'boolean:object':
+		value instanceof String? 'string:object':
+		value instanceof Number? 'number:object':
+		value instanceof BigInt? 'bigint:object':
+		value instanceof Symbol? 'symbol:object':
 		value instanceof Promise? 'promise':
 		Array.isArray( value, )? 'array':
 		value instanceof Map? 'map':
