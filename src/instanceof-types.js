@@ -42,3 +42,9 @@ Reflect.defineProperty( Array, Symbol.hasInstance, {
 		return hasInstance.call( this, instance, ) || Array.isArray( instance, );
 	}
 }, );
+
+Reflect.defineProperty( Reflect, 'hasInstance', {
+	value( constructor, instance, ){
+		return hasInstance.call( constructor, instance, );
+	},
+}, );
