@@ -19,6 +19,7 @@ const betterType= ( value, type, )=>
 		value instanceof Number? 'number:object':
 		value instanceof BigInt? 'bigint:object':
 		value instanceof Symbol? 'symbol:object':
+		value instanceof RegExp? 'regexp':
 		value instanceof Promise? 'promise':
 		Array.isArray( value, )? 'array':
 		value instanceof Map? 'map':
