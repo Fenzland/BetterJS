@@ -38,5 +38,7 @@ function hasInstanceOfType( instance, ){
 );
 
 Reflect.defineProperty( Array, Symbol.hasInstance, {
-	value: instance=> Array.isArray( instance, ),
+	value( instance, ){
+		return hasInstance.call( this, instance, ) || Array.isArray( instance, );
+	}
 }, );
