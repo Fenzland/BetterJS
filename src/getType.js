@@ -18,9 +18,9 @@ const betterType= ( value, type, )=>
 		Array.isArray( value, )? 'array':
 		value instanceof Map? 'map':
 		value instanceof Set? 'set':
-		value instanceof WeakMap? 'weak_map':
-		value instanceof WeakSet? 'weak_set':
-		globalThis.WeakRef && value instanceof WeakRef? 'weak_ref':
+		value instanceof WeakMap? 'weakmap':
+		value instanceof WeakSet? 'weakset':
+		globalThis.WeakRef && value instanceof WeakRef? 'weakref':
 		value.constructor.constructor? (
 			value.constructor.constructor === AsyncFunction? 'async_object':
 			value.constructor.constructor === GeneratorFunction? 'generator':
