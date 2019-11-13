@@ -3,7 +3,7 @@ import './src/expressional-error-control.js'; // DEP: SyncPromise.js
 import './src/promisive.js';
 import './src/global-constructors.js';
 import './src/string-prototype/matchGroup.js';
-import './src/string-prototype/toCamelCase.js';
+import './src/string-prototype/toXXXCase.js';
 import './src/string-prototype/find-index.js';
 import './src/array-prototype/forEachAwait.js';
 import './src/array-prototype/get-and-subArray.js';
