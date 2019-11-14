@@ -28,6 +28,6 @@ Reflect.defineProperty( Array.prototype, 'subArray', {
  */
 Reflect.defineProperty( Array.prototype, 'get', {
 	value( index, ){
-		return this.subArray( index, 1, )[0];
+		return this[index < 0? this.length - - index: index];
 	},
 }, );
