@@ -20,7 +20,7 @@ Reflect.defineProperty( Array.prototype, 'implode', {
  * @return (string)
  */
 Reflect.defineProperty( Array.prototype, 'feed', {
-	value( separator='', ){
+	value( separator='\n', ){
 		return `${this.join( separator, )}${separator}`;
 	},
 }, );
