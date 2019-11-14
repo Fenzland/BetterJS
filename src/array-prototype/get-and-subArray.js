@@ -9,7 +9,13 @@
  */
 Reflect.defineProperty( Array.prototype, 'subArray', {
 	value( start, length=Infinity, ){
-		return this.slice( start, start < 0 && length >= -start? Infinity: start - - length, );
+		const x= start;
+		const y= start < 0 && length >= -start? Infinity: start - - length;
+		
+		return this.slice(
+			Math.min( x, y, ),
+			Math.max( x, y, ),
+		);
 	},
 }, );
 
