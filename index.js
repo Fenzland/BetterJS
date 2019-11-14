@@ -36,11 +36,9 @@ import './src/object/hasProperty.js';
 import './src/function/isXXX.js';
 import './src/getType.js'; // DEP: function/isXXX.js
 import './src/string/compare.js';
-import './src/fp/pipe.js';
-import './src/fp/compose.js';
-import './src/fp/curry.js';
 import './src/promise/any.js';
 import './src/promise/try.js'; // DEP: SyncPromise.js
 import './src/promise/make.js';
 import './src/number.js';
 import './src/math.js';
+import './fp.js';
