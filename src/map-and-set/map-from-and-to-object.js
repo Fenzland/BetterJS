@@ -6,11 +6,7 @@
  */
 Reflect.defineProperty( Map, 'fromObject', {
 	value( object, ){
-		const map= new Map();
-		
-		Object.entries( object, ).forEach( ( [ key, value, ], )=> void map.set( key, value, ), );
-		
-		return map;
+		return new Map( Object.entries( object, ), );
 	},
 }, );
 
