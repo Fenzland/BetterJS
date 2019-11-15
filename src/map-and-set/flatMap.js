@@ -1,15 +1,15 @@
 
 Reflect.defineProperty( Map.prototype, 'flatMap', {
 	value( callback, ){
-		const result= [];
+		const result= new Map();
 		
-		this.forEach( ( ...args )=> {
-			const pices= callback( ...args, );
+		this.forEach( ( item, key, map, )=> {
+			const pices= callback( item, key, map, );
 			
-			if( Array.isArray( pices, ) )
-				result.push( ...pices, );
+			if( pices instanceof Map )
+				pices.forEach( ( item, key, )=> result.set( key, item, ), );
 			else
-				result.push( pices, );
+				result.set( key, pices, );
 		}, );
 		
 		return result;
@@ -18,15 +18,15 @@ Reflect.defineProperty( Map.prototype, 'flatMap', {
 
 Reflect.defineProperty( Set.prototype, 'flatMap', {
 	value( callback, ){
-		const result= [];
+		const result= new Set();
 		
-		this.forEach( ( ...args )=> {
-			const pices= callback( ...args, );
+		this.forEach( ( item, key, set, )=> {
+			const pices= callback( item, key, set, );
 			
-			if( Array.isArray( pices, ) )
-				result.push( ...pices, );
+			if( pices instanceof Set )
+				pices.forEach( item=> result.add( item, ), );
 			else
-				result.push( pices, );
+				result.add( pices, );
 		}, );
 		
 		return result;
