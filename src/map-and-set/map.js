@@ -1,9 +1,9 @@
 
 Reflect.defineProperty( Map.prototype, 'map', {
 	value( callback, ){
-		const result= [];
+		const result= new Map();
 		
-		this.forEach( ( ...args )=> result.push( callback( ...args, ), ), );
+		this.forEach( ( item, key, map, )=> result.set( key, callback( item, key, map, ), ), );
 		
 		return result;
 	},
@@ -11,9 +11,9 @@ Reflect.defineProperty( Map.prototype, 'map', {
 
 Reflect.defineProperty( Set.prototype, 'map', {
 	value( callback, ){
-		const result= [];
+		const result= new Set();
 		
-		this.forEach( ( ...args )=> result.push( callback( ...args, ), ), );
+		this.forEach( ( item, key, set, )=> result.add( callback( item, key, set, ), ), );
 		
 		return result;
 	},
