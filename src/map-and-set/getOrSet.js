@@ -9,7 +9,13 @@ Reflect.defineProperty( Map.prototype, 'getOrSet', {
 		if( this.has( key, ) )
 			return this.get( key, );
 		else
-			return this.set( key, generator(), );
+		{
+			const value= generator();
+			
+			this.set( key, value, );
+			
+			return value;
+		}
 	},
 }, );
 
@@ -18,7 +24,13 @@ Reflect.defineProperty( WeakMap.prototype, 'getOrSet', {
 		if( this.has( key, ) )
 			return this.get( key, );
 		else
-			return this.set( key, generator(), );
+		{
+			const value= generator();
+			
+			this.set( key, value, );
+			
+			return value;
+		}
 	},
 }, );
 
