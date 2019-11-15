@@ -17,7 +17,7 @@ Reflect.defineProperty( Array.prototype, 'set', {
 		const length= this.length;
 		
 		if( index > length || index < -length )
-			return;
+			return value;
 		else
 		if( index < 0 )
 			return this[length - - index]= value;
