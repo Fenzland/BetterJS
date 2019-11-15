@@ -8,10 +8,10 @@ Reflect.defineProperty( Array.prototype, 'shuffle', {
 		
 		for( let k= 0; k < length; ++k )
 		{
-			const j= ~~(length - Math.random()*(length - k));
+			const j= (length - Math.random()*(length - k))<<0;
 			
 			if( j !== k )
-				this.splice( k, 0, ...this.splice( j, 1, ), );
+				[ this[j], this[k], ]= [ this[k], this[j], ];
 		}
 		
 		return this;
