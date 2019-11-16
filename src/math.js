@@ -7,8 +7,10 @@
  * 
  * @return (number)
  */
-Math.mod= ( dividend, divisor, )=> (dividend%divisor - - divisor)%divisor;
+Reflect.defineProperty( Math, 'mod', {
+	value: ( dividend, divisor, )=> (dividend%divisor - - divisor)%divisor,
+}, );
 
-Math.π= Math.PI;
-Math.Π= Math.PI*2;
-Math.e= Math.E;
+Reflect.defineProperty( Math, 'π', { value:Math.PI, }, );
+Reflect.defineProperty( Math, 'Π', { value:Math.PI*2, }, );
+Reflect.defineProperty( Math, 'e', { value:Math.E, }, );

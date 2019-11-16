@@ -7,4 +7,6 @@
  * 
  * @return (bool)
  */
-Number.isInfinite= number=> !Number.isFinite( number, ) && !Number.isNaN( number, );
+Reflect.defineProperty( Number, 'isInfinite', {
+	value: number=> !Number.isFinite( number, ) && !Number.isNaN( number, ),
+}, );
