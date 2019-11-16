@@ -62,10 +62,6 @@ Reflect.defineProperty( Object, 'areSame', {
 	||
 		(valueA !== valueA && valueB !== valueB)
 	||
-		(valueA === Infinity && valueB === -Infinity)
-	||
-		(valueA === -Infinity && valueB === Infinity)
-	||
 		(
 			Array.isArray( valueA, )
 		&&
