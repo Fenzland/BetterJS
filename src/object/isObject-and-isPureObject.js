@@ -21,8 +21,8 @@ Reflect.defineProperty( Object, 'isPureObject', {
 	value: value=> (
 		Object.isObject( value, )
 	&&
-		value.constructor === Object
+		new Set( [ Object, undefined, null, ], ).has( value.constructor, )
 	&&
-		Reflect.getPrototypeOf( value, ) === Object.prototype
+		new Set( [ Object.prototype, undefined, null, ] ).has( Reflect.getPrototypeOf( value, ), )
 	),
 }, );
