@@ -51,59 +51,59 @@ import './isObject-and-isPureObject.js';
  *   Object.is( a, b, )                                         false
  *   Object.areSame( a, b, )                                    true
  * 
- * @param  valueA <mixed>
- * @param  valueB <mixed>
+ * @param  x <mixed>
+ * @param  y <mixed>
  * 
  * @return (boolean)
  */
 Reflect.defineProperty( Object, 'areSame', {
-	value: ( valueA, valueB, )=> (
-		valueA === valueB
+	value: ( x, y, )=> (
+		x === y
 	||
-		(valueA !== valueA && valueB !== valueB)
+		(x !== x && y !== y)
 	||
 		(
-			Array.isArray( valueA, )
+			Array.isArray( x, )
 		&&
-			Array.isArray( valueB, )
+			Array.isArray( y, )
 		&&
-			valueA.length === valueB.length
+			x.length === y.length
 		&&
-			valueA.every( ( item, index, )=> Object.areSame( valueB[index], item, ), )
+			x.every( ( item, index, )=> Object.areSame( y[index], item, ), )
 		)
 	||
 		(
-			Object.isPureObject( valueA, )
+			Object.isPureObject( x, )
 		&&
-			Object.isPureObject( valueB, )
+			Object.isPureObject( y, )
 		&&
-			(( keysA, keysB, )=> (
-				keysA.length === keysB.length
+			(( keysX, keysY, )=> (
+				keysX.length === keysY.length
 			&&
-				new Set( [ ...keysA, ...keysB, ], ).size === keysA.length
+				new Set( [ ...keysX, ...keysY, ], ).size === keysX.length
 			&&
-				keysA.every( key=> Object.areSame( valueA[key], valueB[key], ), )
-			))( Object.keys( valueA, ), Object.keys( valueB, ) )
+				keysX.every( key=> Object.areSame( x[key], y[key], ), )
+			))( Object.keys( x, ), Object.keys( y, ) )
 		)
 	||
 		(
-			valueA instanceof Set
+			x instanceof Set
 		&&
-			valueB instanceof Set
+			y instanceof Set
 		&&
-			valueA.size === valueB.size
+			x.size === y.size
 		&&
-			[ ...valueA, ].every( item=> valueB.has( item, ), )
+			[ ...x, ].every( item=> y.has( item, ), )
 		)
 	||
 		(
-			valueA instanceof Map
+			x instanceof Map
 		&&
-			valueB instanceof Map
+			y instanceof Map
 		&&
-			valueA.size === valueB.size
+			x.size === y.size
 		&&
-			[ ...valueA, ].every( ( [ key, value, ], )=> valueB.has( key, ) && Object.areSame( valueB.get( key, ), value, ), )
+			[ ...x, ].every( ( [ key, value, ], )=> y.has( key, ) && Object.areSame( y.get( key, ), value, ), )
 		)
 	),
 }, );
