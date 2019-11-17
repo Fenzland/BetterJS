@@ -21,12 +21,6 @@ import './isObject-and-isPureObject.js';
  *   Object.is( a, b, )                                         true
  *   Object.areSame( a, b, )                                    true
  *   
- *   const a= Infinity;
- *   const b= -Infinity;
- *   a === b                                                    false
- *   Object.is( a, b, )                                         false
- *   Object.areSame( a, b, )                                    true
- *   
  *   const a= [ 0, 1, ];
  *   const b= [ 0, 1, ];
  *   a === b                                                    false
