@@ -1,4 +1,4 @@
-import { isReservedKey, } from '../../utils/reserved-key.js';
+import './haveOwnProperty.js';
 
 /**
  * deeply get a item from nesting objects
@@ -14,7 +14,7 @@ function deeplyGet( object, [ ...keys ], )
 {
 	const currentKey= keys.shift();
 	
-	if( isReservedKey( currentKey, ) )
+	if(!( Object.haveOwnProperty( object, currentKey, ) ))
 		return undefined;
 	
 	const currentValue= currentKey? object[currentKey]: object;
