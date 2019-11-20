@@ -1,7 +1,7 @@
 import './function/isXXX.js';
 import './global-constructors.js';
 
-const betterType= ( value, type, )=>
+const typeLabel= ( value, type, )=>
 	value === null? 'null':
 	type === 'function'? (
 		value.constructor === AsyncFunction? (
@@ -28,7 +28,7 @@ const betterType= ( value, type, )=>
 		value instanceof WeakSet? 'object:weakset':
 		globalThis.WeakRef && value instanceof WeakRef? 'object:weakref':
 		value.constructor.constructor? (
-			value.constructor.constructor === AsyncFunction? 'async:object':
+			value.constructor.constructor === AsyncFunction? 'object:promise':
 			value.constructor.constructor === GeneratorFunction? 'object:generator':
 			value.constructor.constructor === AsyncGeneratorFunction? 'object:async:generator':
 			'object'
@@ -40,9 +40,5 @@ const betterType= ( value, type, )=>
 
 /**
  * function instead of typeof
- * 
- * "array" for arraies
- * "null" for nulls
- * "class" for class
  */
-Reflect.defineProperty( globalThis, 'getType', { value: value=> betterType( value, typeof value, ), }, );
+Reflect.defineProperty( globalThis, 'typeOf', { value: value=> typeLabel( value, typeof value, ), }, );
