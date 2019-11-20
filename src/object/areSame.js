@@ -63,7 +63,7 @@ Reflect.defineProperty( Object, 'areSame', {
 		&&
 			x.length === y.length
 		&&
-			x.every( ( item, index, )=> Object.areSame( y[index], item, ), )
+			[ ...x, ].every( ( item, index, )=> Object.areSame( y[index], item, ), )
 		)
 	||
 		(
