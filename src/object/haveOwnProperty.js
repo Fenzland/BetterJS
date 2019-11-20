@@ -1,6 +1,6 @@
 
 /**
- * It's better to use Object.hasProperty() instead of Object.prototype.hasOwnProperty()
+ * It's better to use Object.haveOwnProperty() instead of Object.prototype.hasOwnProperty()
  */
 
 const haveOwnProperty= Object.prototype.hasOwnProperty;

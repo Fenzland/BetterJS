@@ -4,7 +4,7 @@ import './haveOwnProperty.js';
  * deeply get a item from nesting objects
  * 
  * @param object {Object}
- * @param keys   [](string)
+ * @param keys   []<(string)|(number)>
  * 
  * @return <any>
  */
@@ -14,7 +14,7 @@ Reflect.defineProperty( Object, 'deeplyGet', { value:deeplyGet, }, );
  * deeply set a item into nesting objects, if nesting object not exists, create it. A number key will create an array. 
  * 
  * @param object {Object}
- * @param keys   [](string)
+ * @param keys   []<(string)|(number)>
  * @param value  <any>
  * 
  * @return <any>
