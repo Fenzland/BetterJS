@@ -31,7 +31,7 @@ import './src/object/areSame.js'; // DEP: object/isObject-and-isPureObject.js
 import './src/object/haveOwnProperty.js';
 import './src/object/bePrototypeOf.js';
 import './src/object/propertyBeEnumerable.js';
-import './src/object/deeplyGet.js';
+import './src/object/deeplyGet-and-deeplySet.js'; // DEP: object/haveOwnProperty.js
 import './src/object/deeplyAssign.js';
 import './src/function/isXXX.js';
 import './src/getType.js'; // DEP: function/isXXX.js
