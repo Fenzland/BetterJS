@@ -42,3 +42,16 @@ const typeLabel= ( value, type, )=>
  * function instead of typeof
  */
 Reflect.defineProperty( globalThis, 'typeOf', { value: value=> typeLabel( value, typeof value, ), }, );
+
+
+/**
+ * function instead of typeof
+ */
+Reflect.defineProperty( globalThis, 'typesOf', { value: value=> typeLabel( value, typeof value, ).split( ':', ), }, );
+
+/**
+ * function instead of typeof
+ */
+Reflect.defineProperty( globalThis, 'withType', {
+	value: ( value, ...types )=> types.every( (types=> type=> types.includes( type, ))( typesOf( value, ), ), ),
+}, );
