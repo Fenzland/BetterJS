@@ -39,7 +39,6 @@ import './src/object/propertyBeEnumerable.js';
 import './src/object/deeplyGet-and-deeplySet.js'; // DEP: object/haveOwnProperty.js
 import './src/object/deeplyAssign.js';
 import './src/function/isXXX.js';
-import './src/types.js'; // DEP: function/isXXX.js
 import './src/string/compare.js';
 import './src/promise/any.js';
 import './src/promise/try.js'; // DEP: SyncPromise.js
@@ -47,4 +46,5 @@ import './src/promise/make.js';
 import './src/number.js';
 import './src/math.js';
 import './src/console.js';
+import './src/types.js'; // DEP: function/isXXX.js
 import './fp.js';
