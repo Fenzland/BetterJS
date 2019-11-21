@@ -1,3 +1,5 @@
+import './isObject-and-isPureObject.js';
+import '../map-and-set/getOrSet.js';
 
 /**
  * deeply version of Object.assign
@@ -9,34 +11,40 @@
  */
 Reflect.defineProperty( Object, 'deeplyAssign', {
 	value( target, ...sources ){
-		if(!( isObject( target, ) ))
+		if(!( Object.isObject( target, ) ))
 			target= Object.assign( target, );
+		
+		const cache= new WeakMap();
 		
 		for( const source of sources )
 		{
-			if(!( isObject( source, ) ))
-				return;
+			if(!( Object.isObject( source, ) ))
+				continue;
 			
-			for( const [ key, value, ] of Object.entries( source, ) )
-			{
-				if(!( isObject( value, ) ))
-					target[key]= value;
-				else
-				if( value instanceof Function )
-					target[key]= value;
-				else
-				if( Array.isArray( value, ) )
-					target[key]= Object.deeplyAssign( Array.isArray( target[key], )? target[key]: [], value, );
-				else
-					target[key]= Object.deeplyAssign( isObject( target[key], )? target[key]: {}, value, );
-			}
+			cache.set( source, target, );
+			
+			assign( cache, target, source, );
 		}
 		
 		return target;
 	},
 }, );
 
-function isObject( value, )
+function assign( cache, target, source, )
 {
-	return [ 'object', 'function', ].includes( typeof value, ) && value;
+	for( const [ key, value, ] of Object.entries( source, ) )
+		if( Object.isObject( value, ) )
+			target[key]= cache.getOrSet( value, ()=> initFor( value, target[key], ), target=> assign( cache, target, value, ), );
+		else
+			target[key]= value;
+	
+	return target;
+}
+
+function initFor( model, target, )
+{
+	if( Array.isArray( model, ) )
+		return Array.isArray( target, )? target: [];
+	else
+		return Object.isObject( target, )? target: {};
 }
