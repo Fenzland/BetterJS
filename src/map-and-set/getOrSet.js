@@ -5,7 +5,7 @@
  */
 
 Reflect.defineProperty( Map.prototype, 'getOrSet', {
-	value( key, generator, ){
+	value( key, generator, afterSetted=undefined, ){
 		if( this.has( key, ) )
 			return this.get( key, );
 		else
@@ -13,6 +13,9 @@ Reflect.defineProperty( Map.prototype, 'getOrSet', {
 			const value= generator();
 			
 			this.set( key, value, );
+			
+			if( afterSetted )
+				afterSetted( value, );
 			
 			return value;
 		}
@@ -20,7 +23,7 @@ Reflect.defineProperty( Map.prototype, 'getOrSet', {
 }, );
 
 Reflect.defineProperty( WeakMap.prototype, 'getOrSet', {
-	value( key, generator, ){
+	value( key, generator, afterSetted=undefined, ){
 		if( this.has( key, ) )
 			return this.get( key, );
 		else
@@ -28,6 +31,9 @@ Reflect.defineProperty( WeakMap.prototype, 'getOrSet', {
 			const value= generator();
 			
 			this.set( key, value, );
+			
+			if( afterSetted )
+				afterSetted( value, );
 			
 			return value;
 		}
