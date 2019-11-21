@@ -11,12 +11,12 @@ Reflect.defineProperty( String, 'compare', {
 		
 		for( let index= 0; index < length; ++index )
 		{
-			const diff= y.charCodeAt( index, ) - x.charCodeAt( index, );
+			const diff= x.charCodeAt( index, ) - y.charCodeAt( index, );
 			
 			if( diff )
 				return unify( diff, );
 		}
 		
-		return unify( y.length - x.length, );
+		return unify( x.length - y.length, );
 	},
 }, );
