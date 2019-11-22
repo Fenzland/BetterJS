@@ -4,12 +4,12 @@ Reflect.defineProperty( Map.prototype, 'flatMap', {
 		const result= new Map();
 		
 		this.forEach( ( item, key, map, )=> {
-			const pices= callback( item, key, map, );
+			const pieces= callback( item, key, map, );
 			
-			if( pices instanceof Map )
-				pices.forEach( ( item, key, )=> result.set( key, item, ), );
+			if( pieces instanceof Map )
+				pieces.forEach( ( item, key, )=> result.set( key, item, ), );
 			else
-				result.set( key, pices, );
+				result.set( key, pieces, );
 		}, );
 		
 		return result;
@@ -21,12 +21,12 @@ Reflect.defineProperty( Set.prototype, 'flatMap', {
 		const result= new Set();
 		
 		this.forEach( ( item, key, set, )=> {
-			const pices= callback( item, key, set, );
+			const pieces= callback( item, key, set, );
 			
-			if( pices instanceof Set )
-				pices.forEach( item=> result.add( item, ), );
+			if( pieces instanceof Set )
+				pieces.forEach( item=> result.add( item, ), );
 			else
-				result.add( pices, );
+				result.add( pieces, );
 		}, );
 		
 		return result;
