@@ -38,9 +38,11 @@ Reflect.defineProperty( Number, 'equal', {
 		||
 			(x === -Infinity && y === Infinity)
 		||
-			x - y < Number.ε
-		||
-			y - x < Number.ε
+			(
+				x - y < Number.ε
+			&&
+				y - x < Number.ε
+			)
 		)
 	),
 }, )
