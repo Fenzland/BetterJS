@@ -1,4 +1,6 @@
 
+Reflect.defineProperty( Number, 'ε', { value:Number.EPSILON, }, );
+
 /**
  * Check wheather a number is infinity
  * 
@@ -36,9 +38,9 @@ Reflect.defineProperty( Number, 'equal', {
 		||
 			(x === -Infinity && y === Infinity)
 		||
-			x - y < Number.EPSILON
+			x - y < Number.ε
 		||
-			y - x < Number.EPSILON
+			y - x < Number.ε
 		)
 	),
 }, )
