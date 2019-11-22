@@ -24,9 +24,26 @@ Reflect.defineProperty( Promise, 'any', {
 					reasons[index]= reason;
 					
 					if( ++reajectedCount === promises.length )
-						reject( reasons, );
+						reject( new AggregateError( reasons, ), );
 				}
 			), );
 		}, );
 	},
 }, );
+
+class AggregateError extends Error
+{
+	#errors;
+	
+	constructor( errors, )
+	{
+		super();
+		
+		this.#errors= [ ...errors, ];
+	}
+	
+	*[Symbol.iterator]()
+	{
+		yield* this.#errors;
+	}
+}
