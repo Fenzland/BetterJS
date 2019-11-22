@@ -10,6 +10,8 @@ import './src/string-prototype/toXXXCase.js';
 import './src/string-prototype/find-index.js';
 import './src/array-prototype/forEach-fix.js';
 import './src/array-prototype/forEachAwait.js';
+import './src/array-prototype/mapAwait.js';
+import './src/array-prototype/flatMapAwait.js';
 import './src/array-prototype/get-and-subArray.js';
 import './src/array-prototype/set.js';
 import './src/array-prototype/finding.js';
@@ -29,6 +31,8 @@ import './src/map-and-set/map.js';
 import './src/map-and-set/flatMap.js';
 import './src/map-and-set/reduce.js';
 import './src/map-and-set/forEachAwait.js';
+import './src/map-and-set/mapAwait.js';
+import './src/map-and-set/flatMapAwait.js';
 import './src/map-and-set/mapAndFilter.js'; // DEP: map-and-set/reduce.js
 import './src/event-target-prototype/listener-control.js'; // DEP: map-and-set/getOrSet.js
 import './src/object/isObject-and-isPureObject.js';
