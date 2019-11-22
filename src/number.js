@@ -15,7 +15,7 @@ Reflect.defineProperty( Number, 'isInfinite', {
  * Check two number are equal
  * 
  *  if one input is not a number, always return false
- *  difference not grater then Number.EPSILON
+ *  difference less then Number.EPSILON
  *  ( 0, -0, ) => true
  *  ( Infinity, -Infinity, ) => true
  *  ( NaN, NaN, ) => false
@@ -36,9 +36,9 @@ Reflect.defineProperty( Number, 'equal', {
 		||
 			(x === -Infinity && y === Infinity)
 		||
-			x - y <= Number.EPSILON
+			x - y < Number.EPSILON
 		||
-			y - x <= Number.EPSILON
+			y - x < Number.EPSILON
 		)
 	),
 }, )
