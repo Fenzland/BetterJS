@@ -121,6 +121,11 @@ But a breaking-free feature will never depend on a breaking feature.
 * [better addEventListener and removeEventListener](./docs/event-target-prototype/listener-control/better-addEventListener-and-removeEventListener.md) (breaking)
 * [removeEventListenersByType and removeAllEventListeners](./docs/event-target-prototype/listener-control/removeEventListenersByType-and-removeAllEventListeners.md)
 
+### Math
+
+* [Math.mod](./docs/math/mod.md)
+* [π, Π, e](./docs/math/constents.md)
+
 ## Why BetterJS
 
 The regular way to make JavaScript better is to make proposals to the TC39. But it's slow and conservative. 
