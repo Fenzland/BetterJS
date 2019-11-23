@@ -84,6 +84,12 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Function.pipe and Function.compose](./docs/fp/compose.md)
 * [curry and yrruc](./docs/fp/curry.md)
 
+#### Promise
+
+* [Promise.any](./docs/promise/any.md)
+* [Promise.try](./docs/promise/try.md)
+* [Promise.make](./docs/promise/make.md)
+
 ## Why BetterJS
 
 The regular way to make JavaScript better is to make proposals to the TC39. But it's slow and conservative. 
