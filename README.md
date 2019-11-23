@@ -50,6 +50,10 @@ But a breaking-free feature will never depend on a breaking feature.
 * [accessible AsyncFunction, GeneratorFunction and AsyncGeneratorFunction](./docs/global-constructors.md)
 * [better types](./docs/types.md)
 
+### on types
+
+* [better instanceof](./docs/instanceof-types.md) (breaking)
+
 ## Why BetterJS
 
 The regular way to make JavaScript better is to make proposals to the TC39. But it's slow and conservative. 
