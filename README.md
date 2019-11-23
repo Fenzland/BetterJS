@@ -39,6 +39,17 @@ Some parts of BetterJS may depend on others.
 So when you import one feature, another feature may available too. 
 But a breaking-free feature will never depend on a breaking feature.  
 
+## Features
+
+### on globalThis
+
+* [SyncPromise](./docs/SyncPromise.md)
+* [throws and tries](./docs/expressional-error-control.md)
+* [global then, promisive timeout, nextFrame and window onload](./docs/promisive.md)
+* [lists extend array](./docs/lists-extend-array.md) (breaking)
+* [accessible AsyncFunction, GeneratorFunction and AsyncGeneratorFunction](./docs/global-constructors.md)
+* [better types](./docs/types.md)
+
 ## Why BetterJS
 
 The regular way to make JavaScript better is to make proposals to the TC39. But it's slow and conservative. 
