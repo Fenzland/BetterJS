@@ -90,6 +90,20 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Promise.try](./docs/promise/try.md)
 * [Promise.make](./docs/promise/make.md)
 
+#### Array
+
+* [better forEach](./docs/array-prototype/forEach-fix.md) (breaking)
+* [sequentially async iterators](./docs/array-prototype/sequentially-async-iterators.md)
+* [get and set](./docs/array-prototype/get-and-set.md)
+* [subArray](./docs/array-prototype/subArray.md)
+* [findLast and findLastIndex](./docs/array-prototype/find-last.md)
+* [better index findings](./docs/find-index.md)
+* [mapAndFilter](./docs/array-prototype/mapAndFilter.md)
+* [implode and feed](./docs/array-prototype/implode-and-feed.md)
+* [better reduce](./docs/array-prototype/better-reduce.md) (breaking)
+* [shuffle](./docs/array-prototype/shuffle.md)
+* [non-modifying methods](./docs/array-prototype/XXXed.md)
+
 ## Why BetterJS
 
 The regular way to make JavaScript better is to make proposals to the TC39. But it's slow and conservative. 
