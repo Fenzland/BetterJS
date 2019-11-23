@@ -116,6 +116,11 @@ But a breaking-free feature will never depend on a breaking feature.
 * [sequentially async iterators](./docs/map-and-set/sequentially-async-iterators.md)
 * [mapAndFilter](./docs/map-and-set/mapAndFilter.md)
 
+### EventTarget
+
+* [better addEventListener and removeEventListener](./docs/event-target-prototype/listener-control/better-addEventListener-and-removeEventListener.md) (breaking)
+* [removeEventListenersByType and removeAllEventListeners](./docs/event-target-prototype/listener-control/removeEventListenersByType-and-removeAllEventListeners.md)
+
 ## Why BetterJS
 
 The regular way to make JavaScript better is to make proposals to the TC39. But it's slow and conservative. 
