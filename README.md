@@ -126,6 +126,56 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Math.mod](./docs/math/mod.md)
 * [π, Π, e](./docs/math/constents.md)
 
+### Functional Programming
+
+* [pipe operation hack](./docs/fp/pipeline.md)
+* [Function.pipe and Function.compose](./docs/fp/compose.md)
+* [curry and yrruc](./docs/fp/curry.md)
+* [detach methods from prototypes](./docs/fp/detach.md)
+* [prepare and postpare](./docs/fp/prepare.md)
+
+There are dozens of Functional Programming (FP) libraries. They often leave standard methods away, and make functions themselves. 
+However, BetterJS only do the basic work and fully reuse then standard methods on the prototypes. 
+
+Here is the code with a typical FP library. Obviously, they implement `map`, `join`, `slice` repeatedly. 
+```javascript
+import { pipe, map, join, slice, } from 'https://some-url.js';
+
+pipe(
+	map( x=> String (x*2), ),
+	join( '~', ),
+	slice( 1, ),
+)( [ 0, 1, 2, ], );
+```
+
+Here is the code with BetterJS: 
+```javascript
+import 'https://better-js.fenz.land/fp.js';
+
+const map= Array.prototype.map.detachCurry();
+const join= String.prototype.join.detachCurry();
+const slice= String.prototype.slice.detachCurry();
+
+// before pipe operator coming
+[ 0, 1, 2, ]['|>'](
+	map( x=> String (x*2), ),
+	join( '~', ),
+	slice( 1, ),
+);
+
+// tomorrow
+[ 0, 1, 2, ]
+	|> map( x=> String (x*2), )
+	|> join( '~', )
+	|> slice( 1, )
+;
+
+```
+
+As we see, functions `map`, `join`, `slice` are detached from standard prototypes. It makes the library minimal. 
+Benefit from taking the way of build-in APIs modifying, we can provide a '|>' method on all basic prototypes, 
+so need not to wait for the pipe operator coming. And it's easy to switch to |> syntax tomorrow. 
+
 ## Why BetterJS
 
 The regular way to make JavaScript better is to make proposals to the TC39. But it's slow and conservative. 
