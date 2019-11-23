@@ -104,6 +104,18 @@ But a breaking-free feature will never depend on a breaking feature.
 * [shuffle](./docs/array-prototype/shuffle.md)
 * [non-modifying methods](./docs/array-prototype/XXXed.md)
 
+#### Map and Set
+
+* [convert between maps and objects](./docs/map-and-set/map-from-and-to-object.md)
+* [better set and add](./docs/map-and-set/better-set-and-add.md) (breaking)
+* [getOrSet](./docs/map-and-set/getOrSet.md)
+* [pop](./docs/map-and-set/pop.md)
+* [map](./docs/map-and-set/map.md)
+* [flatMap](./docs/map-and-set/flatMap.md)
+* [reduce](./docs/map-and-set/reduce.md)
+* [sequentially async iterators](./docs/map-and-set/sequentially-async-iterators.md)
+* [mapAndFilter](./docs/map-and-set/mapAndFilter.md)
+
 ## Why BetterJS
 
 The regular way to make JavaScript better is to make proposals to the TC39. But it's slow and conservative. 
