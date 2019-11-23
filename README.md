@@ -75,6 +75,15 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Object.deeplyAssign](./docs/object/deeplyAssign.md)
 * [Object.haveOwnProperty, Object.bePrototypeOf, Object.propertyBeEnumerable](./docs/object/staticize.md)
 
+#### Function
+
+* [Function.isFunction and Function.isClass](./docs/function/isFunction-and-isClass.md)
+* [Function.isAsync](./docs/function/isAsync.md)
+* [AsyncFunction.limit](./docs/async-function-prototype/limit.md)
+
+* [Function.pipe and Function.compose](./docs/fp/compose.md)
+* [curry and yrruc](./docs/fp/curry.md)
+
 ## Why BetterJS
 
 The regular way to make JavaScript better is to make proposals to the TC39. But it's slow and conservative. 
