@@ -61,6 +61,11 @@ But a breaking-free feature will never depend on a breaking feature.
 * [better index finding](./docs/find-index.md)
 * [String.compare](./docs/string/compare.md)
 
+#### Number
+
+* [Number.isInfinite](./docs/number/isInfinite.md)
+* [Number.equal](./docs/number/equal.md)
+
 ## Why BetterJS
 
 The regular way to make JavaScript better is to make proposals to the TC39. But it's slow and conservative. 
