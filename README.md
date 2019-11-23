@@ -54,6 +54,13 @@ But a breaking-free feature will never depend on a breaking feature.
 
 * [better instanceof](./docs/instanceof-types.md) (breaking)
 
+#### String
+
+* [matchGroup](./docs/string-prototype/matchGroup.md)
+* [toCamelCase, toFlagCase, toSnakeCase and toBarbecueCase](./docs/string-prototype/toXXXCase.md)
+* [better index finding](./docs/find-index.md)
+* [String.compare](./docs/string/compare.md)
+
 ## Why BetterJS
 
 The regular way to make JavaScript better is to make proposals to the TC39. But it's slow and conservative. 
