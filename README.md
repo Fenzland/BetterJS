@@ -66,6 +66,15 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Number.isInfinite](./docs/number/isInfinite.md)
 * [Number.equal](./docs/number/equal.md)
 
+#### Object
+
+* [Object.isObject](./docs/object/isObject.md)
+* [Object.isPureObject](./docs/object/isPureObject.md)
+* [Object.areSame](./docs/object/areSame.md)
+* [Object.deeplyGet and Object.deeplySet](./docs/object/deeplyGet-and-deeplySet.md)
+* [Object.deeplyAssign](./docs/object/deeplyAssign.md)
+* [Object.haveOwnProperty, Object.bePrototypeOf, Object.propertyBeEnumerable](./docs/object/staticize.md)
+
 ## Why BetterJS
 
 The regular way to make JavaScript better is to make proposals to the TC39. But it's slow and conservative. 
