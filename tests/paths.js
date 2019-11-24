@@ -6,4 +6,5 @@ export default [
 	'./lists-extend-array.js',
 	'./promisive.js',
 	'./global-constructors.js',
+	'./async-function-prototype/limit.js',
 ];
