@@ -49,4 +49,9 @@ export default [
 	'./math.js',
 	'./console.js',
 	'./types.js',
+	'./fp/pipeline.js',
+	'./fp/compose.js',
+	'./fp/curry.js',
+	'./fp/detach.js',
+	'./fp/detachCurry.js',
 ];
