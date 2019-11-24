@@ -5,4 +5,5 @@ export default [
 	'./instanceof-types.js',
 	'./lists-extend-array.js',
 	'./promisive.js',
+	'./global-constructors.js',
 ];
