@@ -42,4 +42,6 @@ export default [
 	'./object/deeplyAssign.js',
 	'./function/isXXX.js',
 	'./string/compare.js',
+	'./promise/any.js',
+	'./promise/try.js',
 ];
