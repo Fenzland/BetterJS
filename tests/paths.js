@@ -10,4 +10,5 @@ export default [
 	'./string-prototype/matchGroup.js',
 	'./string-prototype/toXXXCase.js',
 	'./string-prototype/find-index.js',
+	'./array-prototype/forEach-fix.js',
 ];
