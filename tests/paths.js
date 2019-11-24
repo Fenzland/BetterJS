@@ -14,4 +14,7 @@ export default [
 	'./array-prototype/forEachAwait.js',
 	'./array-prototype/mapAwait.js',
 	'./array-prototype/flatMapAwait.js',
+	'./array-prototype/get-and-subArray.js',
+	'./array-prototype/set.js',
+	'./array-prototype/finding.js',
 ];
