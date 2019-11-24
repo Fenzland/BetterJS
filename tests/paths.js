@@ -18,5 +18,6 @@ export default [
 	'./array-prototype/set.js',
 	'./array-prototype/finding.js',
 	'./array-prototype/mapAndFilter.js',
+	'./array-prototype/implode-and-feed.js',
 	'./array-prototype/better-reduce.js',
 ];
