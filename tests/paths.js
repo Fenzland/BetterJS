@@ -28,4 +28,11 @@ export default [
 	'./map-and-set/map-from-and-to-object.js',
 	'./map-and-set/getOrSet.js',
 	'./map-and-set/pop.js',
+	'./map-and-set/map.js',
+	'./map-and-set/flatMap.js',
+	'./map-and-set/reduce.js',
+	'./map-and-set/forEachAwait.js',
+	'./map-and-set/mapAwait.js',
+	'./map-and-set/flatMapAwait.js',
+	'./map-and-set/mapAndFilter.js',
 ];
