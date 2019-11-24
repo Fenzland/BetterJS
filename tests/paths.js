@@ -40,4 +40,5 @@ export default [
 	'./object/areSame.js',
 	'./object/deeplyGet-and-deeplySet.js',
 	'./object/deeplyAssign.js',
+	'./function/isXXX.js',
 ];
