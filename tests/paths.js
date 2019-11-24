@@ -41,4 +41,5 @@ export default [
 	'./object/deeplyGet-and-deeplySet.js',
 	'./object/deeplyAssign.js',
 	'./function/isXXX.js',
+	'./string/compare.js',
 ];
