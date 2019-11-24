@@ -11,4 +11,7 @@ export default [
 	'./string-prototype/toXXXCase.js',
 	'./string-prototype/find-index.js',
 	'./array-prototype/forEach-fix.js',
+	'./array-prototype/forEachAwait.js',
+	'./array-prototype/mapAwait.js',
+	'./array-prototype/flatMapAwait.js',
 ];
