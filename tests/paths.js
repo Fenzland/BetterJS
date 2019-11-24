@@ -25,4 +25,5 @@ export default [
 	'./array-prototype/reversed.js',
 	'./array-prototype/sorted.js',
 	'./array-prototype/shuffle-and-shuffled.js',
+	'./map-and-set/map-from-and-to-object.js',
 ];
