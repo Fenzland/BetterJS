@@ -45,4 +45,5 @@ export default [
 	'./promise/any.js',
 	'./promise/try.js',
 	'./promise/make.js',
+	'./number.js',
 ];
