@@ -44,4 +44,5 @@ export default [
 	'./string/compare.js',
 	'./promise/any.js',
 	'./promise/try.js',
+	'./promise/make.js',
 ];
