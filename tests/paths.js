@@ -35,4 +35,5 @@ export default [
 	'./map-and-set/mapAwait.js',
 	'./map-and-set/flatMapAwait.js',
 	'./map-and-set/mapAndFilter.js',
+	'./event-target-prototype/listener-control.js',
 ];
