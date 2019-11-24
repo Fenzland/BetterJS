@@ -46,4 +46,5 @@ export default [
 	'./promise/try.js',
 	'./promise/make.js',
 	'./number.js',
+	'./math.js',
 ];
