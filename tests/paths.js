@@ -20,4 +20,9 @@ export default [
 	'./array-prototype/mapAndFilter.js',
 	'./array-prototype/implode-and-feed.js',
 	'./array-prototype/better-reduce.js',
+	'./array-prototype/popped-pushed-shifted-unshifted.js',
+	'./array-prototype/spliced.js',
+	'./array-prototype/reversed.js',
+	'./array-prototype/sorted.js',
+	'./array-prototype/shuffle-and-shuffled.js',
 ];
