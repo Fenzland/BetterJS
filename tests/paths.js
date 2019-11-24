@@ -47,4 +47,5 @@ export default [
 	'./promise/make.js',
 	'./number.js',
 	'./math.js',
+	'./console.js',
 ];
