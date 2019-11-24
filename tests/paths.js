@@ -4,4 +4,5 @@ export default [
 	'./expressional-error-control.js',
 	'./instanceof-types.js',
 	'./lists-extend-array.js',
+	'./promisive.js',
 ];
