@@ -36,4 +36,6 @@ export default [
 	'./map-and-set/flatMapAwait.js',
 	'./map-and-set/mapAndFilter.js',
 	'./event-target-prototype/listener-control.js',
+	'./object/isObject-and-isPureObject.js',
+	'./object/areSame.js',
 ];
