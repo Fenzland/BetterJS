@@ -17,4 +17,6 @@ export default [
 	'./array-prototype/get-and-subArray.js',
 	'./array-prototype/set.js',
 	'./array-prototype/finding.js',
+	'./array-prototype/mapAndFilter.js',
+	'./array-prototype/better-reduce.js',
 ];
