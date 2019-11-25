@@ -65,6 +65,7 @@ But a breaking-free feature will never depend on a breaking feature.
 
 * [Number.isInfinite](./docs/number/isInfinite.md)
 * [Number.equal](./docs/number/equal.md)
+* [Number.or](./docs/number/or.md)
 
 #### Object
 
@@ -97,6 +98,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [get and set](./docs/array-prototype/get-and-set.md)
 * [subArray](./docs/array-prototype/subArray.md)
 * [findLast and findLastIndex](./docs/array-prototype/find-last.md)
+* [seek and seekLast](./docs/array-prototype/seek.md)
 * [better index findings](./docs/find-index.md)
 * [mapAndFilter](./docs/array-prototype/mapAndFilter.md)
 * [implode and feed](./docs/array-prototype/implode-and-feed.md)

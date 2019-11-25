@@ -24,3 +24,14 @@ test( 'Number.equal', ( { assertBe, }, )=> {
 	assertBe( Number.equal( Infinity, -Infinity, ), true, );
 	assertBe( Number.equal( -0, 0, ), true, );
 }, );
+
+test( 'Number.or', ( { assertBe, }, )=> {
+	
+	assertBe( Number.or( 0, 1, 2, ), 0, );
+	assertBe( Number.or( '', '1', 2, ), 1, );
+	assertBe( Number.or( null, 1n, ), 1, );
+	assertBe( Number.or( Infinity, 3, ), Infinity, );
+	assertBe( Number.or( NaN, 3, ), 3, );
+	assertBe( Number.or( undefined, 'a', ), NaN, );
+	assertBe( Number.or(), NaN, );
+}, );
