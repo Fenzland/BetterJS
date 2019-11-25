@@ -18,6 +18,7 @@ import './src/array-prototype/finding.js';
 import './src/array-prototype/mapAndFilter.js';
 import './src/array-prototype/implode-and-feed.js';
 import './src/array-prototype/better-reduce.js';
+import './src/array-prototype/better-entries.js';
 import './src/array-prototype/popped-pushed-shifted-unshifted.js';
 import './src/array-prototype/spliced.js';
 import './src/array-prototype/reversed.js';
