@@ -51,3 +51,19 @@ Reflect.defineProperty( Array.prototype, 'findLastIdx', {
 		return index === -1? NaN: index;
 	},
 }, );
+
+Reflect.defineProperty( Array.prototype, 'seek', {
+	value( predicate, deflt=undefined, ){
+		const idx= this.findIdx( predicate, );
+		
+		return Number.isNaN( idx, )? deflt: this[idx];
+	},
+}, );
+
+Reflect.defineProperty( Array.prototype, 'seekLast', {
+	value( predicate, deflt=undefined, ){
+		const idx= this.findLastIdx( predicate, );
+		
+		return Number.isNaN( idx, )? deflt: this[idx];
+	},
+}, );
