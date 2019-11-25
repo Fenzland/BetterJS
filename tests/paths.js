@@ -57,4 +57,5 @@ export default [
 	'./fp/curry.js',
 	'./fp/detach.js',
 	'./fp/detachCurry.js',
+	'./fp/through.js',
 ];
