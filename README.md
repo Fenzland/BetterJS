@@ -65,6 +65,7 @@ But a breaking-free feature will never depend on a breaking feature.
 
 * [Number.isInfinite](./docs/number/isInfinite.md)
 * [Number.equal](./docs/number/equal.md)
+* [Number.or](./docs/number/or.md)
 
 #### Object
 
