@@ -138,6 +138,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [detach methods from prototypes](./docs/fp/detach.md)
 * [prepare and postpare](./docs/fp/prepare.md)
 * [through](./docs/fp/through.md)
+* [noop](./docs/fp/noop.md)
 
 There are dozens of Functional Programming (FP) libraries. They often leave standard methods away, and make functions themselves. 
 However, BetterJS only do the basic work and fully reuse then standard methods on the prototypes. 
