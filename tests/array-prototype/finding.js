@@ -42,3 +42,17 @@ test( '{Array}.findLastIdx', ( { assertBe, }, )=> {
 	assertBe( array.findLastIdx( x=> x > 2, ), 5, );
 	assertBe( array.findLastIdx( x=> x < 0, ), NaN, );
 }, );
+
+test( '{Array}.seek', ( { assertBe, }, )=> {
+	const array= [ 1, 2, 3, 4, 3, 2.1, 1, ];
+	
+	assertBe( array.seek( x=> x > 2, 8, ), 3, );
+	assertBe( array.seek( x=> x < 0, 8, ), 8, );
+}, );
+
+test( '{Array}.seekLast', ( { assertBe, }, )=> {
+	const array= [ 1, 2, 3, 4, 3, 2.1, 1, ];
+	
+	assertBe( array.seekLast( x=> x > 2, 8, ), 2.1, );
+	assertBe( array.seekLast( x=> x < 0, 8, ), 8, );
+}, );
