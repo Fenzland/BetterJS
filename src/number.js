@@ -46,3 +46,26 @@ Reflect.defineProperty( Number, 'equal', {
 		)
 	),
 }, )
+
+/**
+ * return the first valid number from given values. return NaN if there is no valid number
+ * 
+ * @param numbers []<(number)|<mixed>>
+ * 
+ * @return (number)
+ */
+Reflect.defineProperty( Number, 'or', {
+	value: ( ...numbers )=> {
+		for( const number of numbers )
+			if(
+				number !== null
+			&&
+				number !== ''
+			&&
+				!Number.isNaN( number, )
+			)
+				return Number (number);
+		
+		return NaN;
+	},
+}, );
