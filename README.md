@@ -103,6 +103,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [mapAndFilter](./docs/array-prototype/mapAndFilter.md)
 * [implode and feed](./docs/array-prototype/implode-and-feed.md)
 * [better reduce](./docs/array-prototype/better-reduce.md) (breaking)
+* [better entries, keys and values](./docs/array-prototype/better-entries.md) (breaking)
 * [shuffle](./docs/array-prototype/shuffle.md)
 * [non-modifying methods](./docs/array-prototype/XXXed.md)
 
