@@ -59,4 +59,5 @@ export default [
 	'./fp/detachCurry.js',
 	'./fp/through.js',
 	'./fp/noop.js',
+	'./fp/if.js',
 ];
