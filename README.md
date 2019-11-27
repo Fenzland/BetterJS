@@ -80,7 +80,8 @@ But a breaking-free feature will never depend on a breaking feature.
 
 * [Function.isFunction and Function.isClass](./docs/function/isFunction-and-isClass.md)
 * [Function.isAsync](./docs/function/isAsync.md)
-* [AsyncFunction.limit](./docs/async-function-prototype/limit.md)
+* [Function.prototype.new](./docs/function-prototype/new.md)
+* [AsyncFunction.prototype.limit](./docs/async-function-prototype/limit.md)
 
 * [Function.pipe and Function.compose](./docs/fp/compose.md)
 * [curry and yrruc](./docs/fp/curry.md)
