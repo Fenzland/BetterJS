@@ -132,7 +132,7 @@ But a breaking-free feature will never depend on a breaking feature.
 
 ### Functional Programming
 
-* [pipe operation hack](./docs/fp/pipeline.md)
+* [pipeline operator hack](./docs/fp/pipeline-operator-hack.md)
 * [Function.pipe and Function.compose](./docs/fp/compose.md)
 * [curry and yrruc](./docs/fp/curry.md)
 * [detach methods from prototypes](./docs/fp/detach.md)
