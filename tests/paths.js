@@ -53,6 +53,7 @@ export default [
 	'./console.js',
 	'./types.js',
 	'./fp/pipeline-operator-hack.js',
+	'./fp/bind-syntax-hack.js',
 	'./fp/compose.js',
 	'./fp/curry.js',
 	'./fp/detach.js',
