@@ -1,7 +1,7 @@
 import { test, } from '../Robberfly.js';
-import '../../src/fp/pipeline.js';
+import '../../src/fp/pipeline-operator-hack.js';
 
-test( 'FP: pipe', async ( { assertBe, assertAs, }, )=> {
+test( 'FP: pipeline operator hack', async ( { assertBe, assertAs, }, )=> {
 	
 	assertBe(
 		true['|>'](
