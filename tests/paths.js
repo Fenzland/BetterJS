@@ -52,7 +52,7 @@ export default [
 	'./math.js',
 	'./console.js',
 	'./types.js',
-	'./fp/pipeline.js',
+	'./fp/pipeline-operator-hack.js',
 	'./fp/compose.js',
 	'./fp/curry.js',
 	'./fp/detach.js',
