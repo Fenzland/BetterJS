@@ -7,6 +7,7 @@ export default [
 	'./promisive.js',
 	'./global-constructors.js',
 	'./async-function-prototype/limit.js',
+	'./generator-function/toIterator.js',
 	'./function-prototype/new.js',
 	'./string-prototype/matchGroup.js',
 	'./string-prototype/toXXXCase.js',
