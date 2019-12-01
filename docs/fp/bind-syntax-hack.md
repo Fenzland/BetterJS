@@ -8,18 +8,21 @@ And it's not a well design. We design a better version. And hack it with a metho
 ```javascript
 import 'https://better-js.fenz.land/src/fp/bind-syntax-hack.js';
 
-const foo= document.getElementById( 'foo' );
+const foo= [ 0, 1, 2, ];
 
-function addClass( className ){
-	this.classList.add( className );
+function *odd(){
+	for( const [ index, value, ] of this.entries() )
+	if( Math.mod( index, 2, ) === 1 )
+		yield value;
 }
 
-const setAttributeToFoo= foo['::']( 'setAttribute', );
-const addClassToFoo= foo['::']( addClass, );
+const sliceFoo= foo['::'].slice;
+const iterateFoo= foo['::'][Symbol.iterator];
+const oddOfFoo= foo['::']( odd, );
 
 // maybe after the proposal redesign and implement
-const setAttributeToFoo= foo::setAttribute;
-const removeAttributeFromFoo= foo::['removeAttribute'];
-const addClassToFoo= foo::{addClass};
+const sliceFoo= foo::slice;
+const iterateFoo= foo::[Symbol.iterator];
+const oddOfFoo= foo::{odd};
 
 ```
