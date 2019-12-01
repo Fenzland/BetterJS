@@ -67,3 +67,31 @@ Reflect.defineProperty( Array.prototype, 'seekLast', {
 		return Number.isNaN( idx, )? deflt: this[idx];
 	},
 }, );
+
+Reflect.defineProperty( Array.prototype, 'dig', {
+	value( callback, deflt=undefined, ){
+		for( let I= 0; I < this.length; ++I )
+		{
+			const result= callback( this[I], I, this, );
+			
+			if( result !== undefined )
+				return result;
+		}
+		
+		return deflt;
+	},
+}, );
+
+Reflect.defineProperty( Array.prototype, 'digLast', {
+	value( callback, deflt=undefined, ){
+		for( let I= this.length; --I >= 0; )
+		{
+			const result= callback( this[I], I, this, );
+			
+			if( result !== undefined )
+				return result;
+		}
+		
+		return deflt;
+	},
+}, );
