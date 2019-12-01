@@ -56,3 +56,21 @@ test( '{Array}.seekLast', ( { assertBe, }, )=> {
 	assertBe( array.seekLast( x=> x > 2, 8, ), 2.1, );
 	assertBe( array.seekLast( x=> x < 0, 8, ), 8, );
 }, );
+
+test( '{Array}.dig', ( { assertBe, }, )=> {
+	const array= [ 1, 2, 3, 4, 3, 2.1, 1, ];
+	
+	assertBe( array.dig( x=> x >= 2? x - 2: undefined, ), 0, );
+	assertBe( array.dig( x=> x > 8? x - 2: undefined, ), undefined, );
+	assertBe( array.dig( x=> x > 8? x - 2: 8, ), 8, );
+	assertBe( array.dig( x=> x < 0, 8, ), false, );
+}, );
+
+test( '{Array}.digLast', ( { assertBe, }, )=> {
+	const array= [ 1, 2, 3, 4, 3, 2.1, 1, ];
+	
+	assertBe( array.digLast( x=> x >= 2? x - 2: undefined, ), 2.1 - 2, );
+	assertBe( array.digLast( x=> x > 8? x - 2: undefined, ), undefined, );
+	assertBe( array.digLast( x=> x > 8? x - 2: 8, ), 8, );
+	assertBe( array.digLast( x=> x < 0, 8, ), false, );
+}, );
