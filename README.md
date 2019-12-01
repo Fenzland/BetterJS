@@ -82,6 +82,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Function.isAsync](./docs/function/isAsync.md)
 * [Function.prototype.new](./docs/function-prototype/new.md)
 * [AsyncFunction.prototype.limit](./docs/async-function-prototype/limit.md)
+* [GeneratorFunction.toIterator](./docs/generator-function/toIterator.md)
 
 * [Function.pipe and Function.compose](./docs/fp/compose.md)
 * [curry and yrruc](./docs/fp/curry.md)
@@ -100,6 +101,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [subArray](./docs/array-prototype/subArray.md)
 * [findLast and findLastIndex](./docs/array-prototype/find-last.md)
 * [seek and seekLast](./docs/array-prototype/seek.md)
+* [dig and digLast](./docs/array-prototype/dig.md)
 * [better index findings](./docs/find-index.md)
 * [mapAndFilter](./docs/array-prototype/mapAndFilter.md)
 * [implode and feed](./docs/array-prototype/implode-and-feed.md)

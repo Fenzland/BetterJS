@@ -3,6 +3,7 @@ import './src/expressional-error-control.js'; // DEP: SyncPromise.js
 import './src/promisive.js';
 import './src/global-constructors.js';
 import './src/async-function-prototype/limit.js'; // DEP: global-constructors.js
+import './src/generator-function/toIterator.js'; // DEP: global-constructors.js
 import './src/string-prototype/matchGroup.js';
 import './src/string-prototype/toXXXCase.js';
 import './src/string-prototype/find-index.js';
