@@ -141,7 +141,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [curry and yrruc](./docs/fp/curry.md)
 * [detach methods from prototypes](./docs/fp/detach.md)
 * [prepare and postpare](./docs/fp/prepare.md)
-* [through](./docs/fp/through.md)
+* [through and awaitThrough](./docs/fp/through.md)
 * [noop](./docs/fp/noop.md)
 * [if](./docs/fp/if.md)
 
