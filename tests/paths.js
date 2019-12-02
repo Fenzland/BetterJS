@@ -43,6 +43,7 @@ export default [
 	'./event-target-prototype/listener-control.js',
 	'./object/isObject-and-isPureObject.js',
 	'./object/areSame.js',
+	'./object/haveOwnProperty.js',
 	'./object/deeplyGet-and-deeplySet.js',
 	'./object/deeplyAssign.js',
 	'./function/isXXX.js',
