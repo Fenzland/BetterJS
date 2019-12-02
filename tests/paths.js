@@ -44,6 +44,7 @@ export default [
 	'./object/isObject-and-isPureObject.js',
 	'./object/areSame.js',
 	'./object/haveOwnProperty.js',
+	'./object/propertyBeEnumerable.js',
 	'./object/deeplyGet-and-deeplySet.js',
 	'./object/deeplyAssign.js',
 	'./function/isXXX.js',
