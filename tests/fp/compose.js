@@ -76,3 +76,81 @@ test( 'FP: Function.compose', async ( { assertBe, assertFunction, assertRun, }, 
 	
 	queue.assert( 5, );
 }, );
+
+test( 'FP: Function.asyncPipe', async ( { assertBe, assertFunction, assertAsync, assertRun, }, )=> {
+	const queue= assertRun();
+	
+	const foo= Function.asyncPipe(
+		async x=> {
+			queue.run( 1, );
+			
+			assertBe( x, 2, );
+			
+			return x**6;
+		},
+		async x=> {
+			queue.run( 2, );
+			
+			assertBe( x, 0b1000000, );
+			
+			return x - 1;
+		},
+		async x=> {
+			queue.run( 3, );
+			
+			assertBe( x, 0b111111, );
+			
+			return `--${x.toString( 2, )}--`;
+		},
+	);
+	
+	assertFunction( foo, );
+	assertAsync( foo, );
+	
+	queue.run( 0, );
+	
+	assertBe( await foo( 2, ), '--111111--', );
+	
+	queue.run( 4, );
+	
+	queue.assert( 5, );
+}, );
+
+test( 'FP: Function.asyncCompose', async ( { assertBe, assertFunction, assertAsync, assertRun, }, )=> {
+	const queue= assertRun();
+	
+	const foo= Function.asyncCompose(
+		async x=> {
+			queue.run( 3, );
+			
+			assertBe( x, 0b111111, );
+			
+			return `--${x.toString( 2, )}--`;
+		},
+		async x=> {
+			queue.run( 2, );
+			
+			assertBe( x, 0b1000000, );
+			
+			return x - 1;
+		},
+		async x=> {
+			queue.run( 1, );
+			
+			assertBe( x, 2, );
+			
+			return x**6;
+		},
+	);
+	
+	assertFunction( foo, );
+	assertAsync( foo, );
+	
+	queue.run( 0, );
+	
+	assertBe( await foo( 2, ), '--111111--', );
+	
+	queue.run( 4, );
+	
+	queue.assert( 5, );
+}, );
