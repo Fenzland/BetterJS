@@ -142,6 +142,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [detach methods from prototypes](./docs/fp/detach.md)
 * [prepare and postpare](./docs/fp/prepare.md)
 * [through and awaitThrough](./docs/fp/through.md)
+* [Function.prototype.await](./docs/fp/await.md)
 * [noop](./docs/fp/noop.md)
 * [if](./docs/fp/if.md)
 
