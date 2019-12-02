@@ -6,5 +6,6 @@ import './src/fp/curry.js';
 import './src/fp/detach.js';
 import './src/fp/detachCurry.js';
 import './src/fp/through.js';
+import './src/fp/await.js';
 import './src/fp/noop.js';
 import './src/fp/if.js';
