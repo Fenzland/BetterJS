@@ -6,5 +6,11 @@
 const haveOwnProperty= Object.prototype.hasOwnProperty;
 
 Reflect.defineProperty( Object, 'haveOwnProperty', {
-	value: ( object, property, )=> haveOwnProperty.call( object, property, ),
+	value: ( object, property, )=>
+		object !== null
+	&&
+		object !== undefined
+	&&
+		haveOwnProperty.call( object, property, )
+	,
 }, );
