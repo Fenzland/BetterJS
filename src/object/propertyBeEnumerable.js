@@ -6,5 +6,11 @@
 const propertyBeEnumerable= Object.prototype.propertyIsEnumerable;
 
 Reflect.defineProperty( Object, 'propertyBeEnumerable', {
-	value: ( object, property, )=> propertyBeEnumerable.call( object, property, ),
+	value: ( object, property, )=>
+		object !== null
+	&&
+		object !== undefined
+	&&
+		propertyBeEnumerable.call( object, property, )
+	,
 }, );
