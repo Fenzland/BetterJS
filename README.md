@@ -75,6 +75,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Object.deeplyGet and Object.deeplySet](./docs/object/deeplyGet-and-deeplySet.md)
 * [Object.deeplyAssign](./docs/object/deeplyAssign.md)
 * [Object.haveOwnProperty, Object.bePrototypeOf, Object.propertyBeEnumerable](./docs/object/staticize.md)
+* [Object.get and Object.set](./docs/object/get-and-set.md)
 
 #### Function
 
