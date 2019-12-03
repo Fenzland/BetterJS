@@ -66,6 +66,7 @@ export default [
 	'./fp/curry.js',
 	'./fp/detach.js',
 	'./fp/detachCurry.js',
+	'./fp/toMethod.js',
 	'./fp/through.js',
 	'./fp/await.js',
 	'./fp/noop.js',

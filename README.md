@@ -143,6 +143,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Function.pipe and Function.compose](./docs/fp/compose.md)
 * [curry and yrruc](./docs/fp/curry.md)
 * [detach methods from prototypes](./docs/fp/detach.md)
+* [toMethod](./docs/fp/toMethod.md)
 * [prepare and postpare](./docs/fp/prepare.md)
 * [through and awaitThrough](./docs/fp/through.md)
 * [Function.prototype.await](./docs/fp/await.md)
