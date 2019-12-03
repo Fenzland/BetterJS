@@ -151,8 +151,22 @@ But a breaking-free feature will never depend on a breaking feature.
 * [run](./docs/fp/run.md)
 * [if](./docs/fp/if.md)
 
+#### Paradigm free
+
+There are three paradigms in the JavaScript world, when a function has a main parameter and some of other parameters or options. 
+The traditional JavaScript paradigm (OOP) put the main parameter as the `this` context; 
+another widely used paradigm is put the main parameter at the first; 
+the last paradigm that from other FP languages is put the main parameter at the last of parameter list. 
+
+We provide various way to make them work together. 
+Expect `curry`, we also support `yrruc` for the first parameter paradigm; 
+A group methods of `detach` to help you convert a method with `this` into a functio; 
+And `toMethod` let you convert functions into methods. 
+
+#### Using prototypes
+
 There are dozens of Functional Programming (FP) libraries. They often leave standard methods away, and make functions themselves. 
-However, BetterJS only do the basic work and fully reuse then standard methods on the prototypes. 
+However, BetterJS only do the basic work and fully reuse then standard methods on the prototypes to make it minimal. 
 
 Here is the code with a typical FP library. Obviously, they implement `map`, `join`, `slice` repeatedly. 
 ```javascript
