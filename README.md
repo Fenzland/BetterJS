@@ -92,6 +92,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Promise.any](./docs/promise/any.md)
 * [Promise.try](./docs/promise/try.md)
 * [Promise.make](./docs/promise/make.md)
+* [better allSettled](./docs/promise/better-allSettled.md)
 * [binded functions on Promise](./docs/promise/binded.md)
 
 #### Array
