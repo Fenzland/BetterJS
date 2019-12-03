@@ -46,6 +46,7 @@ export default [
 	'./object/haveOwnProperty.js',
 	'./object/bePrototypeOf.js',
 	'./object/propertyBeEnumerable.js',
+	'./object/get-and-set.js',
 	'./object/deeplyGet-and-deeplySet.js',
 	'./object/deeplyAssign.js',
 	'./function/isXXX.js',
