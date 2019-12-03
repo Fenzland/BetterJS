@@ -49,6 +49,7 @@ import './src/object/deeplyAssign.js'; // DEP: object/isObject-and-isPureObject.
 import './src/function/isXXX.js';
 import './src/string/compare.js';
 import './src/promise/binded.js';
+import './src/promise/better-allSettled.js';
 import './src/promise/any.js';
 import './src/promise/try.js'; // DEP: SyncPromise.js
 import './src/promise/make.js';
