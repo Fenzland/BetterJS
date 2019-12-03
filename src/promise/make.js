@@ -1,6 +1,6 @@
 
 Reflect.defineProperty( Promise, 'make', {
-	value(){
+	value: ()=> {
 		let resolve, reject;
 		
 		const promise= new Promise( ( toResolve, toReject, )=> {

@@ -1,7 +1,7 @@
 
 Reflect.defineProperty( Promise, 'any', {
-	value( promises, ){
-		return new Promise( ( resolve, reject, )=> {
+	value: promises=>
+		new Promise( ( resolve, reject, )=> {
 			
 			let isResolved= false;
 			let reajectedCount= 0;
@@ -27,8 +27,8 @@ Reflect.defineProperty( Promise, 'any', {
 						reject( new AggregateError( reasons, ), );
 				}
 			), );
-		}, );
-	},
+		}, )
+	,
 }, );
 
 class AggregateError extends Error
