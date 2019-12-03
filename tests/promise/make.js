@@ -2,8 +2,10 @@ import { test, } from '../Robberfly.js';
 import '../../src/promise/make.js';
 
 test( 'Promise.make', async ( { assertBe, assertInstanceOf, assertOwn, assertNotOwn, assertRun, }, )=> {
+	const { make, }= Promise;
+	
 	{
-		const promise= Promise.make();
+		const promise= make();
 		
 		assertInstanceOf( promise, Promise, );
 		assertOwn( promise, 'promise', );
@@ -24,7 +26,7 @@ test( 'Promise.make', async ( { assertBe, assertInstanceOf, assertOwn, assertNot
 	}
 	
 	{
-		const promise= Promise.make();
+		const promise= make();
 		
 		setTimeout( ()=> promise.reject( 3, ), );
 		
@@ -40,7 +42,7 @@ test( 'Promise.make', async ( { assertBe, assertInstanceOf, assertOwn, assertNot
 	}
 	
 	{
-		const { promise, resolve, reject, }= Promise.make();
+		const { promise, resolve, reject, }= make();
 		
 		assertInstanceOf( promise, Promise, );
 		assertNotOwn( promise, 'promise', );
@@ -61,7 +63,7 @@ test( 'Promise.make', async ( { assertBe, assertInstanceOf, assertOwn, assertNot
 	}
 	
 	{
-		const { promise, resolve, reject, }= Promise.make();
+		const { promise, resolve, reject, }= make();
 		
 		setTimeout( ()=> reject( 3, ), );
 		

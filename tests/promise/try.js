@@ -2,8 +2,10 @@ import { test, } from '../Robberfly.js';
 import '../../src/promise/try.js';
 
 test( 'Promise.try', async ( { assertBe, assertInstanceOf, assertRun, }, )=> {
+	const { try:_try, }= Promise;
+	
 	{
-		const promise= Promise.try( ()=> 6, );
+		const promise= _try( ()=> 6, );
 		
 		assertInstanceOf( promise, Promise, );
 		assertBe( await promise, 6, );
@@ -18,7 +20,7 @@ test( 'Promise.try', async ( { assertBe, assertInstanceOf, assertRun, }, )=> {
 	}
 	
 	{
-		const promise= Promise.try( ()=> { throw 3; }, );
+		const promise= _try( ()=> { throw 3; }, );
 		
 		assertInstanceOf( promise, Promise, );
 		assertBe( await promise.catch( x=> x, ), 3, );
