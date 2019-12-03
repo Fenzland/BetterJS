@@ -51,6 +51,7 @@ export default [
 	'./function/isXXX.js',
 	'./string/compare.js',
 	'./promise/binded.js',
+	'./promise/better-allSettled.js',
 	'./promise/any.js',
 	'./promise/try.js',
 	'./promise/make.js',
