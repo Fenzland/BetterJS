@@ -1,4 +1,6 @@
 
+const splitWords= string=> string.split( string.match( /^[_A-Z]+$/, )? '_': /(?:[_-]|(?=[A-Z]))/, );
+
 /**
  * Convert sting to camelCase.
  * 
@@ -6,14 +8,13 @@
  */
 Reflect.defineProperty( String.prototype, 'toCamelCase', {
 	value(){
-		return this.split( /(?:[_-]|(?=[A-Z]))/, ).map( ( word, index, )=>
+		return splitWords( this, ).map( ( word, index, )=>
 			index > 0?
-				`${word.slice( 0, 1, ).toUpperCase()}${word.slice( 1, )}`:
+				`${word.slice( 0, 1, ).toUpperCase()}${word.slice( 1, ).toLowerCase()}`:
 			word.toLowerCase()
 		, ).join( '', );
 	},
 }, );
-
 
 /**
  * Convert sting to FlagCase.
@@ -22,8 +23,8 @@ Reflect.defineProperty( String.prototype, 'toCamelCase', {
  */
 Reflect.defineProperty( String.prototype, 'toFlagCase', {
 	value(){
-		return this.split( /(?:[_-]|(?=[A-Z]))/, ).map( ( word, index, )=>
-			`${word.slice( 0, 1, ).toUpperCase()}${word.slice( 1, )}`
+		return splitWords( this, ).map( ( word, index, )=>
+			`${word.slice( 0, 1, ).toUpperCase()}${word.slice( 1, ).toLowerCase()}`
 		, ).join( '', );
 	},
 }, );
@@ -35,7 +36,18 @@ Reflect.defineProperty( String.prototype, 'toFlagCase', {
  */
 Reflect.defineProperty( String.prototype, 'toSnakeCase', {
 	value(){
-		return this.split( /(?:[_-]|(?=[A-Z]))/, ).map( ( word, index, )=> word.toLowerCase(), ).join( '_', );
+		return splitWords( this, ).map( ( word, index, )=> word.toLowerCase(), ).join( '_', );
+	},
+}, );
+
+/**
+ * Convert sting to PYTHON_CASE.
+ * 
+ * @return (string)
+ */
+Reflect.defineProperty( String.prototype, 'toPythonCase', {
+	value(){
+		return splitWords( this, ).map( ( word, index, )=> word.toUpperCase(), ).join( '_', );
 	},
 }, );
 
@@ -46,6 +58,6 @@ Reflect.defineProperty( String.prototype, 'toSnakeCase', {
  */
 Reflect.defineProperty( String.prototype, 'toBarbecueCase', {
 	value(){
-		return this.split( /(?:[_-]|(?=[A-Z]))/, ).map( ( word, index, )=> word.toLowerCase(), ).join( '-', );
+		return splitWords( this, ).map( ( word, index, )=> word.toLowerCase(), ).join( '-', );
 	},
 }, );
