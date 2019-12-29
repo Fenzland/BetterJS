@@ -9,6 +9,8 @@ Much worse, if you reduce at a empty array without initial value, it throws Type
 
 So we remove this usage, assume the initial value as undefined when you omit it. 
 
+The same as fixed `Array.prototype.forEach`, better reduce iterate new pushed items during iterating. 
+
 ## Usage
 
 Just same as before, but the first parameter always means value but not item, and can use at empty array.
