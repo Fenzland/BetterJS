@@ -8,6 +8,7 @@ import './src/fp/detachCurry.js';
 import './src/fp/toMethod.js';
 import './src/fp/through.js';
 import './src/fp/await.js';
+import './src/fp/valve.js';
 import './src/fp/noop.js';
 import './src/fp/run.js';
 import './src/fp/if.js';

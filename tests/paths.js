@@ -69,6 +69,7 @@ export default [
 	'./fp/toMethod.js',
 	'./fp/through.js',
 	'./fp/await.js',
+	'./fp/valve.js',
 	'./fp/noop.js',
 	'./fp/run.js',
 	'./fp/if.js',
