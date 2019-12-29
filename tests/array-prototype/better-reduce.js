@@ -30,3 +30,30 @@ test( 'better {Array}.reduce', ( { assertBe, assertRun, }, )=> {
 		
 	}, Infinity, );
 }, );
+
+test( 'better {Array}.reduce with push', ( { assertBe, assertRun, }, )=> {
+	const array= [ 0, ];
+	
+	const runLoop= assertRun();
+	let times= 0;
+	
+	const sum= array.reduce( ( sum, item, index, arr, )=> {
+		runLoop.run();
+		
+		if( item < 8 )
+			arr.push( item - - 1, );
+		
+		if( times++ === 0 )
+		{
+			assertBe( sum, 0, );
+			assertBe( item, 0, );
+			assertBe( index, 0, );
+			assertBe( arr, array, );
+		}
+		
+		return sum - - item;
+	}, 0, );
+	
+	runLoop.assert( 9, );
+	assertBe( sum, 36, )
+}, );
