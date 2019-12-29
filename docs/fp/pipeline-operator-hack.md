@@ -20,3 +20,23 @@ value
 	|> function_2
 ;
 ```
+
+There are some problem async pipeline. We provide another sugar. 
+
+```javascript
+import 'https://better-js.fenz.land/src/fp/pipeline-operator-hack.js';
+
+// in future
+value
+	|> asyncFunction_0
+	.then( function_1 )
+	.then( function_2 )
+;
+
+// now we use.
+value['||>'](
+	asyncFunction_0,
+	function_1,
+	function_2,
+);
+```

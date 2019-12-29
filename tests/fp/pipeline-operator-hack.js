@@ -54,3 +54,15 @@ test( 'FP: pipeline operator hack', async ( { assertBe, assertAs, }, )=> {
 		[ 8, ],
 	);
 }, );
+
+test( 'FP: async pipeline operator hack', async ( { assertBe, assertAs, }, )=> {
+	
+	assertBe(
+		await 1['||>'](
+			async x=> Promise.resolve( 1, ),
+			x=> x*2,
+		),
+		2,
+	);
+	
+}, );
