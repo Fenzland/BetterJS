@@ -2,12 +2,15 @@ import './src/SyncPromise.js';
 import './src/expressional-error-control.js'; // DEP: SyncPromise.js
 import './src/promisive.js';
 import './src/global-constructors.js';
+import './src/function-prototype/new.js';
 import './src/async-function-prototype/limit.js'; // DEP: global-constructors.js
 import './src/generator-function/toIterator.js'; // DEP: global-constructors.js
 import './src/string-prototype/matchGroup.js';
 import './src/string-prototype/toXXXCase.js';
 import './src/string-prototype/find-index.js';
 import './src/array-prototype/forEachAwait.js';
+import './src/array-prototype/mapAwait.js';
+import './src/array-prototype/flatMapAwait.js';
 import './src/array-prototype/get-and-subArray.js';
 import './src/array-prototype/set.js';
 import './src/array-prototype/finding.js';
@@ -25,6 +28,8 @@ import './src/map-and-set/map.js';
 import './src/map-and-set/flatMap.js';
 import './src/map-and-set/reduce.js';
 import './src/map-and-set/forEachAwait.js';
+import './src/map-and-set/mapAwait.js';
+import './src/map-and-set/flatMapAwait.js';
 import './src/map-and-set/mapAndFilter.js'; // DEP: map-and-set/reduce.js
 import './src/event-target-prototype/listener-control.breaking-free.js'; // DEP: map-and-set/getOrSet.js
 import './src/object/isObject-and-isPureObject.js';
@@ -32,6 +37,7 @@ import './src/object/areSame.js'; // DEP: object/isObject-and-isPureObject.js
 import './src/object/haveOwnProperty.js';
 import './src/object/bePrototypeOf.js';
 import './src/object/propertyBeEnumerable.js';
+import './src/object/get-and-set.js'; // DEP: object/haveOwnProperty.js
 import './src/object/deeplyGet-and-deeplySet.js'; // DEP: object/haveOwnProperty.js
 import './src/object/deeplyAssign.js'; // DEP: object/isObject-and-isPureObject.js map-and-set/getOrSet.js
 import './src/function/isXXX.js';
