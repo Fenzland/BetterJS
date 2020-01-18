@@ -5,6 +5,7 @@ import './src/lists-extend-array.js';
 import './src/promisive.js';
 import './src/global-constructors.js';
 import './src/function-prototype/new.js';
+import './src/function-prototype/rename.js';
 import './src/async-function-prototype/limit.js'; // DEP: global-constructors.js
 import './src/generator-function/toIterator.js'; // DEP: global-constructors.js
 import './src/string-prototype/matchGroup.js';
