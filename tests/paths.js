@@ -8,6 +8,7 @@ export default [
 	'./global-constructors.js',
 	'./async-function-prototype/limit.js',
 	'./generator-function/toIterator.js',
+	'./generator-prototype/toArray.js',
 	'./function-prototype/new.js',
 	'./function-prototype/rename.js',
 	'./string-prototype/matchGroup.js',
