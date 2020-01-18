@@ -82,6 +82,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Function.isFunction and Function.isClass](./docs/function/isFunction-and-isClass.md)
 * [Function.isAsync](./docs/function/isAsync.md)
 * [Function.prototype.new](./docs/function-prototype/new.md)
+* [Function.prototype.rename](./docs/function-prototype/rename.md)
 * [AsyncFunction.prototype.limit](./docs/async-function-prototype/limit.md)
 * [GeneratorFunction.toIterator](./docs/generator-function/toIterator.md)
 
