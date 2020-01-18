@@ -47,7 +47,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [throws and tries](./docs/expressional-error-control.md)
 * [global then, promisive timeout, nextFrame and window onload](./docs/promisive.md)
 * [lists extend array](./docs/lists-extend-array.md) (breaking)
-* [accessible AsyncFunction, GeneratorFunction and AsyncGeneratorFunction](./docs/global-constructors.md)
+* [accessible AsyncFunction, GeneratorFunction, AsyncGeneratorFunction, Generator and AsyncGenerator](./docs/global-constructors.md)
 * [better types](./docs/types.md)
 
 ### on types
