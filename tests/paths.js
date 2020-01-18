@@ -9,6 +9,7 @@ export default [
 	'./async-function-prototype/limit.js',
 	'./generator-function/toIterator.js',
 	'./function-prototype/new.js',
+	'./function-prototype/rename.js',
 	'./string-prototype/matchGroup.js',
 	'./string-prototype/toXXXCase.js',
 	'./string-prototype/find-index.js',
