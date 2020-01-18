@@ -127,6 +127,10 @@ But a breaking-free feature will never depend on a breaking feature.
 * [sequentially async iterators](./docs/map-and-set/sequentially-async-iterators.md)
 * [mapAndFilter](./docs/map-and-set/mapAndFilter.md)
 
+#### Generator
+
+* [toArray](./docs/generator-prototype/toArray.md)
+
 ### EventTarget
 
 * [better addEventListener and removeEventListener](./docs/event-target-prototype/listener-control/better-addEventListener-and-removeEventListener.md) (breaking)
