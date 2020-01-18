@@ -8,6 +8,7 @@ import './src/async-function-prototype/limit.js'; // DEP: global-constructors.js
 import './src/generator-function/toIterator.js'; // DEP: global-constructors.js
 import './src/generator-prototype/toArray.js'; // DEP: global-constructors.js
 import './src/generator-prototype/map.js'; // DEP: global-constructors.js
+import './src/generator-prototype/forEach.js'; // DEP: global-constructors.js
 import './src/string-prototype/matchGroup.js';
 import './src/string-prototype/toXXXCase.js';
 import './src/string-prototype/find-index.js';
