@@ -60,7 +60,9 @@ But a breaking-free feature will never depend on a breaking feature.
 * [matchGroup](./docs/string-prototype/matchGroup.md)
 * [toCamelCase, toFlagCase, toSnakeCase and toBarbecueCase](./docs/string-prototype/toXXXCase.md)
 * [better index finding](./docs/find-index.md)
+
 * [String.compare](./docs/string/compare.md)
+* [String.concat](./docs/string/concat.md)
 
 #### Number
 
@@ -114,6 +116,8 @@ But a breaking-free feature will never depend on a breaking feature.
 * [better entries, keys and values](./docs/array-prototype/better-entries.md) (breaking)
 * [shuffle](./docs/array-prototype/shuffle.md)
 * [non-modifying methods](./docs/array-prototype/XXXed.md)
+
+* [Array.concat](./docs/array/concat.md)
 
 #### Map and Set
 
