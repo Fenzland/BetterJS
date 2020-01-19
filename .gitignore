@@ -1,5 +1,6 @@
 # branch src
-/README.md
-/docs
-/tests
+/*
+!/.gitignore
+!/src
+!/*.js
 **.ts
