@@ -32,6 +32,7 @@ import './src/array-prototype/sorted.js';
 import './src/array-prototype/shuffle-and-shuffled.js';
 import './src/map-and-set/map-from-and-to-object.js';
 import './src/map-and-set/getOrSet.js';
+import './src/map-and-set/put.js';
 import './src/map-and-set/pop.js';
 import './src/map-and-set/map.js';
 import './src/map-and-set/flatMap.js';
