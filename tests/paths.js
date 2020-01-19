@@ -13,6 +13,7 @@ export default [
 	'./generator-prototype/forEach.js',
 	'./async-generator-prototype/toArray.js',
 	'./async-generator-prototype/map.js',
+	'./async-generator-prototype/forEach.js',
 	'./function-prototype/new.js',
 	'./function-prototype/rename.js',
 	'./string-prototype/matchGroup.js',
