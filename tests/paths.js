@@ -6,6 +6,7 @@ export default [
 	'./lists-extend-array.js',
 	'./promisive.js',
 	'./global-constructors.js',
+	'./global-constructors-fix.js',
 	'./async-function-prototype/limit.js',
 	'./generator-function/toIterator.js',
 	'./generator-prototype/toArray.js',
