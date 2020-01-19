@@ -51,6 +51,7 @@ import './src/object/deeplyGet-and-deeplySet.js'; // DEP: object/haveOwnProperty
 import './src/object/deeplyAssign.js'; // DEP: object/isObject-and-isPureObject.js map-and-set/getOrSet.js
 import './src/function/isXXX.js';
 import './src/generator/for.js'; // DEP: global-constructors.js
+import './src/generator/range.js'; // DEP: generator/for.js
 import './src/string/compare.js';
 import './src/promise/any.js';
 import './src/promise/try.js'; // DEP: SyncPromise.js
