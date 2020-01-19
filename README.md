@@ -126,6 +126,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [better set and add](./docs/map-and-set/better-set-and-add.md) (breaking)
 * [better entries, keys and values](./docs/map-and-set/better-entries.md) (breaking)
 * [getOrSet](./docs/map-and-set/getOrSet.md)
+* [put](./docs/map-and-set/put.md)
 * [pop](./docs/map-and-set/pop.md)
 * [map](./docs/map-and-set/map.md)
 * [flatMap](./docs/map-and-set/flatMap.md)
