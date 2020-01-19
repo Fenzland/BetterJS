@@ -12,6 +12,7 @@ export default [
 	'./generator-prototype/map.js',
 	'./generator-prototype/forEach.js',
 	'./async-generator-prototype/toArray.js',
+	'./async-generator-prototype/mapAwait.js',
 	'./async-generator-prototype/map.js',
 	'./async-generator-prototype/forEach.js',
 	'./function-prototype/new.js',
