@@ -42,6 +42,7 @@ export default [
 	'./map-and-set/better-set-and-add.js',
 	'./map-and-set/better-entries.js',
 	'./map-and-set/getOrSet.js',
+	'./map-and-set/put.js',
 	'./map-and-set/pop.js',
 	'./map-and-set/map.js',
 	'./map-and-set/flatMap.js',
