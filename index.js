@@ -5,8 +5,17 @@ import './src/lists-extend-array.js';
 import './src/promisive.js';
 import './src/global-constructors.js';
 import './src/function-prototype/new.js';
+import './src/function-prototype/rename.js';
 import './src/async-function-prototype/limit.js'; // DEP: global-constructors.js
 import './src/generator-function/toIterator.js'; // DEP: global-constructors.js
+import './src/generator-prototype/toArray.js'; // DEP: global-constructors.js
+import './src/generator-prototype/map.js'; // DEP: global-constructors.js
+import './src/generator-prototype/forEach.js'; // DEP: global-constructors.js
+import './src/async-generator-prototype/toArray.js'; // DEP: global-constructors.js
+import './src/async-generator-prototype/mapAwait.js'; // DEP: global-constructors.js
+import './src/async-generator-prototype/forEachAwait.js'; // DEP: global-constructors.js
+import './src/async-generator-prototype/map.js'; // DEP: global-constructors.js
+import './src/async-generator-prototype/forEach.js'; // DEP: global-constructors.js
 import './src/string-prototype/matchGroup.js';
 import './src/string-prototype/toXXXCase.js';
 import './src/string-prototype/find-index.js';

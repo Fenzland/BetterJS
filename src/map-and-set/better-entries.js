@@ -2,7 +2,7 @@
 const mapEntries= Map.prototype.entries;
 
 Reflect.defineProperty( Map.prototype, 'entries', {
-	value( callback, ){
+	value(){
 		return [ ...mapEntries.call( this, ), ];
 	},
 }, );
@@ -10,7 +10,7 @@ Reflect.defineProperty( Map.prototype, 'entries', {
 const mapKeys= Map.prototype.keys;
 
 Reflect.defineProperty( Map.prototype, 'keys', {
-	value( callback, ){
+	value(){
 		return [ ...mapKeys.call( this, ), ];
 	},
 }, );
@@ -18,7 +18,7 @@ Reflect.defineProperty( Map.prototype, 'keys', {
 const mapValues= Map.prototype.values;
 
 Reflect.defineProperty( Map.prototype, 'values', {
-	value( callback, ){
+	value(){
 		return [ ...mapValues.call( this, ), ];
 	},
 }, );
@@ -26,7 +26,7 @@ Reflect.defineProperty( Map.prototype, 'values', {
 const setEntries= Set.prototype.entries;
 
 Reflect.defineProperty( Set.prototype, 'entries', {
-	value( callback, ){
+	value(){
 		return [ ...setEntries.call( this, ), ];
 	},
 }, );
@@ -34,7 +34,7 @@ Reflect.defineProperty( Set.prototype, 'entries', {
 const setKeys= Set.prototype.keys;
 
 Reflect.defineProperty( Set.prototype, 'keys', {
-	value( callback, ){
+	value(){
 		return [ ...setKeys.call( this, ), ];
 	},
 }, );
@@ -42,7 +42,7 @@ Reflect.defineProperty( Set.prototype, 'keys', {
 const setValues= Set.prototype.values;
 
 Reflect.defineProperty( Set.prototype, 'values', {
-	value( callback, ){
+	value(){
 		return [ ...setValues.call( this, ), ];
 	},
 }, );

@@ -2,7 +2,7 @@
 const entries= Array.prototype.entries;
 
 Reflect.defineProperty( Array.prototype, 'entries', {
-	value( callback, ){
+	value(){
 		return [ ...entries.call( this, ), ];
 	},
 }, );
@@ -10,7 +10,7 @@ Reflect.defineProperty( Array.prototype, 'entries', {
 const keys= Array.prototype.keys;
 
 Reflect.defineProperty( Array.prototype, 'keys', {
-	value( callback, ){
+	value(){
 		return [ ...keys.call( this, ), ];
 	},
 }, );
@@ -18,7 +18,7 @@ Reflect.defineProperty( Array.prototype, 'keys', {
 const values= Array.prototype.values;
 
 Reflect.defineProperty( Array.prototype, 'values', {
-	value( callback, ){
+	value(){
 		return [ ...values.call( this, ), ];
 	},
 }, );

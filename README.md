@@ -47,7 +47,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [throws and tries](./docs/expressional-error-control.md)
 * [global then, promisive timeout, nextFrame and window onload](./docs/promisive.md)
 * [lists extend array](./docs/lists-extend-array.md) (breaking)
-* [accessible AsyncFunction, GeneratorFunction and AsyncGeneratorFunction](./docs/global-constructors.md)
+* [accessible AsyncFunction, GeneratorFunction, AsyncGeneratorFunction, Generator and AsyncGenerator](./docs/global-constructors.md)
 * [better types](./docs/types.md)
 
 ### on types
@@ -82,6 +82,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Function.isFunction and Function.isClass](./docs/function/isFunction-and-isClass.md)
 * [Function.isAsync](./docs/function/isAsync.md)
 * [Function.prototype.new](./docs/function-prototype/new.md)
+* [Function.prototype.rename](./docs/function-prototype/rename.md)
 * [AsyncFunction.prototype.limit](./docs/async-function-prototype/limit.md)
 * [GeneratorFunction.toIterator](./docs/generator-function/toIterator.md)
 
@@ -125,6 +126,17 @@ But a breaking-free feature will never depend on a breaking feature.
 * [reduce](./docs/map-and-set/reduce.md)
 * [sequentially async iterators](./docs/map-and-set/sequentially-async-iterators.md)
 * [mapAndFilter](./docs/map-and-set/mapAndFilter.md)
+
+#### Generator
+
+* [toArray](./docs/generator-prototype/toArray.md)
+* [map and forEach](./docs/generator-prototype/map-and-forEach.md)
+
+#### AsyncGenerator
+
+* [toArray](./docs/async-generator-prototype/toArray.md)
+* [mapAwait and forEachAwait](./docs/async-generator-prototype/mapAwait-and-forEachAwait.md)
+* [map and forEach](./docs/async-generator-prototype/map-and-forEach.md)
 
 ### EventTarget
 
