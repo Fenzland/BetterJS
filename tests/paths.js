@@ -60,6 +60,7 @@ export default [
 	'./object/deeplyAssign.js',
 	'./function/isXXX.js',
 	'./generator/for.js',
+	'./generator/range.js',
 	'./string/compare.js',
 	'./promise/binded.js',
 	'./promise/better-allSettled.js',
