@@ -61,6 +61,7 @@ import './src/function/isXXX.js';
 import './src/generator/for.js'; // DEP: global-constructors.js
 import './src/generator/range.js'; // DEP: generator/for.js
 import './src/string/compare.js';
+import './src/string/concat.js';
 import './src/promise/binded.js';
 import './src/promise/better-allSettled.js';
 import './src/promise/any.js';
