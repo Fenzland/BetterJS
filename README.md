@@ -48,6 +48,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [global then, promisive timeout, nextFrame and window onload](./docs/promisive.md)
 * [lists extend array](./docs/lists-extend-array.md) (breaking)
 * [accessible AsyncFunction, GeneratorFunction, AsyncGeneratorFunction, Generator and AsyncGenerator](./docs/global-constructors.md)
+* [fix Generator and AsyncGenerator](./docs/global-constructors-fix.md)
 * [better types](./docs/types.md)
 
 ### on types
@@ -59,7 +60,9 @@ But a breaking-free feature will never depend on a breaking feature.
 * [matchGroup](./docs/string-prototype/matchGroup.md)
 * [toCamelCase, toFlagCase, toSnakeCase and toBarbecueCase](./docs/string-prototype/toXXXCase.md)
 * [better index finding](./docs/find-index.md)
+
 * [String.compare](./docs/string/compare.md)
+* [String.concat](./docs/string/concat.md)
 
 #### Number
 
@@ -75,6 +78,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Object.deeplyGet and Object.deeplySet](./docs/object/deeplyGet-and-deeplySet.md)
 * [Object.deeplyAssign](./docs/object/deeplyAssign.md)
 * [Object.haveOwnProperty, Object.bePrototypeOf, Object.propertyBeEnumerable](./docs/object/staticize.md)
+* [Object.map](./docs/object/map.md)
 * [Object.get and Object.set](./docs/object/get-and-set.md)
 
 #### Function
@@ -114,12 +118,15 @@ But a breaking-free feature will never depend on a breaking feature.
 * [shuffle](./docs/array-prototype/shuffle.md)
 * [non-modifying methods](./docs/array-prototype/XXXed.md)
 
+* [Array.concat](./docs/array/concat.md)
+
 #### Map and Set
 
 * [convert between maps and objects](./docs/map-and-set/map-from-and-to-object.md)
 * [better set and add](./docs/map-and-set/better-set-and-add.md) (breaking)
 * [better entries, keys and values](./docs/map-and-set/better-entries.md) (breaking)
 * [getOrSet](./docs/map-and-set/getOrSet.md)
+* [put](./docs/map-and-set/put.md)
 * [pop](./docs/map-and-set/pop.md)
 * [map](./docs/map-and-set/map.md)
 * [flatMap](./docs/map-and-set/flatMap.md)
@@ -131,6 +138,9 @@ But a breaking-free feature will never depend on a breaking feature.
 
 * [toArray](./docs/generator-prototype/toArray.md)
 * [map and forEach](./docs/generator-prototype/map-and-forEach.md)
+
+* [GeneratorFunction.for](./docs/generator/for.md)
+* [GeneratorFunction.range](./docs/generator/range.md)
 
 #### AsyncGenerator
 
