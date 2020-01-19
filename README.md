@@ -132,6 +132,10 @@ But a breaking-free feature will never depend on a breaking feature.
 * [toArray](./docs/generator-prototype/toArray.md)
 * [map and forEach](./docs/generator-prototype/map-and-forEach.md)
 
+#### AsyncGenerator
+
+* [toArray](./docs/async-generator-prototype/toArray.md)
+
 ### EventTarget
 
 * [better addEventListener and removeEventListener](./docs/event-target-prototype/listener-control/better-addEventListener-and-removeEventListener.md) (breaking)
