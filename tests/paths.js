@@ -63,6 +63,8 @@ export default [
 	'./generator/for.js',
 	'./generator/range.js',
 	'./string/compare.js',
+	'./string/concat.js',
+	'./array/concat.js',
 	'./promise/binded.js',
 	'./promise/better-allSettled.js',
 	'./promise/any.js',
