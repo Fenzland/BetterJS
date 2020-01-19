@@ -10,6 +10,7 @@ export default [
 	'./generator-function/toIterator.js',
 	'./generator-prototype/toArray.js',
 	'./generator-prototype/map.js',
+	'./generator-prototype/forEach.js',
 	'./function-prototype/new.js',
 	'./function-prototype/rename.js',
 	'./string-prototype/matchGroup.js',
