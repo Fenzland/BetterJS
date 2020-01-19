@@ -59,6 +59,7 @@ export default [
 	'./object/deeplyGet-and-deeplySet.js',
 	'./object/deeplyAssign.js',
 	'./function/isXXX.js',
+	'./generator/for.js',
 	'./string/compare.js',
 	'./promise/binded.js',
 	'./promise/better-allSettled.js',
