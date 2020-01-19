@@ -32,6 +32,7 @@ import './src/array-prototype/sorted.js';
 import './src/array-prototype/shuffle-and-shuffled.js';
 import './src/map-and-set/map-from-and-to-object.js';
 import './src/map-and-set/getOrSet.js';
+import './src/map-and-set/put.js';
 import './src/map-and-set/pop.js';
 import './src/map-and-set/map.js';
 import './src/map-and-set/flatMap.js';
@@ -46,11 +47,16 @@ import './src/object/areSame.js'; // DEP: object/isObject-and-isPureObject.js
 import './src/object/haveOwnProperty.js';
 import './src/object/bePrototypeOf.js';
 import './src/object/propertyBeEnumerable.js';
+import './src/object/map.js';
 import './src/object/get-and-set.js'; // DEP: object/haveOwnProperty.js
 import './src/object/deeplyGet-and-deeplySet.js'; // DEP: object/haveOwnProperty.js
 import './src/object/deeplyAssign.js'; // DEP: object/isObject-and-isPureObject.js map-and-set/getOrSet.js
 import './src/function/isXXX.js';
+import './src/generator/for.js'; // DEP: global-constructors.js
+import './src/generator/range.js'; // DEP: generator/for.js
 import './src/string/compare.js';
+import './src/string/concat.js';
+import './src/array/concat.js';
 import './src/promise/any.js';
 import './src/promise/try.js'; // DEP: SyncPromise.js
 import './src/promise/make.js';

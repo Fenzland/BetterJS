@@ -4,6 +4,7 @@ import './src/instanceof-types.js';
 import './src/lists-extend-array.js';
 import './src/promisive.js';
 import './src/global-constructors.js';
+import './src/global-constructors-fix.js'; // DEP: global-constructors.js
 import './src/function-prototype/new.js';
 import './src/function-prototype/rename.js';
 import './src/async-function-prototype/limit.js'; // DEP: global-constructors.js
@@ -39,6 +40,7 @@ import './src/map-and-set/map-from-and-to-object.js';
 import './src/map-and-set/better-set-and-add.js';
 import './src/map-and-set/better-entries.js';
 import './src/map-and-set/getOrSet.js';
+import './src/map-and-set/put.js';
 import './src/map-and-set/pop.js';
 import './src/map-and-set/map.js';
 import './src/map-and-set/flatMap.js';
@@ -53,11 +55,16 @@ import './src/object/areSame.js'; // DEP: object/isObject-and-isPureObject.js
 import './src/object/haveOwnProperty.js';
 import './src/object/bePrototypeOf.js';
 import './src/object/propertyBeEnumerable.js';
+import './src/object/map.js';
 import './src/object/get-and-set.js'; // DEP: object/haveOwnProperty.js
 import './src/object/deeplyGet-and-deeplySet.js'; // DEP: object/haveOwnProperty.js
 import './src/object/deeplyAssign.js'; // DEP: object/isObject-and-isPureObject.js map-and-set/getOrSet.js
 import './src/function/isXXX.js';
+import './src/generator/for.js'; // DEP: global-constructors.js
+import './src/generator/range.js'; // DEP: generator/for.js
 import './src/string/compare.js';
+import './src/string/concat.js';
+import './src/array/concat.js';
 import './src/promise/binded.js';
 import './src/promise/better-allSettled.js';
 import './src/promise/any.js';
