@@ -13,6 +13,7 @@ import './src/generator-prototype/map.js'; // DEP: global-constructors.js
 import './src/generator-prototype/forEach.js'; // DEP: global-constructors.js
 import './src/async-generator-prototype/toArray.js'; // DEP: global-constructors.js
 import './src/async-generator-prototype/mapAwait.js'; // DEP: global-constructors.js
+import './src/async-generator-prototype/forEachAwait.js'; // DEP: global-constructors.js
 import './src/async-generator-prototype/map.js'; // DEP: global-constructors.js
 import './src/async-generator-prototype/forEach.js'; // DEP: global-constructors.js
 import './src/string-prototype/matchGroup.js';
