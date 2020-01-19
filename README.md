@@ -130,6 +130,7 @@ But a breaking-free feature will never depend on a breaking feature.
 #### Generator
 
 * [toArray](./docs/generator-prototype/toArray.md)
+* [map and forEach](./docs/generator-prototype/map-and-forEach.md)
 
 ### EventTarget
 
