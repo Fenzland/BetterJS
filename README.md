@@ -132,6 +132,8 @@ But a breaking-free feature will never depend on a breaking feature.
 * [toArray](./docs/generator-prototype/toArray.md)
 * [map and forEach](./docs/generator-prototype/map-and-forEach.md)
 
+* [GeneratorFunction.for](./docs/generator/for.md)
+
 #### AsyncGenerator
 
 * [toArray](./docs/async-generator-prototype/toArray.md)
