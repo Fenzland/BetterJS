@@ -135,6 +135,7 @@ But a breaking-free feature will never depend on a breaking feature.
 #### AsyncGenerator
 
 * [toArray](./docs/async-generator-prototype/toArray.md)
+* [mapAwait and forEachAwait](./docs/async-generator-prototype/mapAwait-and-forEachAwait.md)
 * [map and forEach](./docs/async-generator-prototype/map-and-forEach.md)
 
 ### EventTarget
