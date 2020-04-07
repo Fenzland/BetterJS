@@ -170,6 +170,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [through and awaitThrough](./docs/fp/through.md)
 * [Function.prototype.await](./docs/fp/await.md)
 * [Function.prototype.valve](./docs/fp/valve.md)
+* [Function.prototype.debounce](./docs/fp/debounce.md)
 * [noop](./docs/fp/noop.md)
 * [run](./docs/fp/run.md)
 * [if](./docs/fp/if.md)
