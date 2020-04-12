@@ -37,7 +37,7 @@ import './src/array-prototype/reversed.js';
 import './src/array-prototype/sorted.js';
 import './src/array-prototype/shuffle-and-shuffled.js';
 import './src/map-and-set/map-from-and-to-object.js';
-import './src/map-and-set/better-set-and-add.js';
+import './src/map-and-set/better-modifications.js';
 import './src/map-and-set/better-entries.js';
 import './src/map-and-set/getOrSet.js';
 import './src/map-and-set/put.js';
