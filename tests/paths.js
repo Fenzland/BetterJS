@@ -39,7 +39,7 @@ export default [
 	'./array-prototype/sorted.js',
 	'./array-prototype/shuffle-and-shuffled.js',
 	'./map-and-set/map-from-and-to-object.js',
-	'./map-and-set/better-set-and-add.js',
+	'./map-and-set/better-modifications.js',
 	'./map-and-set/better-entries.js',
 	'./map-and-set/getOrSet.js',
 	'./map-and-set/put.js',
