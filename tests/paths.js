@@ -54,6 +54,7 @@ export default [
 	'./event-target-prototype/listener-control.js',
 	'./object/isObject.js',
 	'./object/isPureObject.js',
+	'./object/better-frozen.js',
 	'./object/areSame.js',
 	'./object/haveOwnProperty.js',
 	'./object/bePrototypeOf.js',
