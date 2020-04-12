@@ -15,7 +15,14 @@ Reflect.defineProperty( Function.prototype, 'debounce', {
 				window.taueee= promise= Promise.make();
 			
 			process= setTimeout( ()=> {
-				promise.resolve( original.call( this, ...args, ), );
+				try
+				{
+					promise.resolve( original.call( this, ...args, ), );
+				}
+				catch( reason )
+				{
+					promise.reject( reason, );
+				}
 				process= undefined;
 			}, delay, );
 			

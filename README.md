@@ -171,6 +171,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Function.prototype.await](./docs/fp/await.md)
 * [Function.prototype.valve](./docs/fp/valve.md)
 * [Function.prototype.debounce](./docs/fp/debounce.md)
+* [Function.prototype.throttle](./docs/fp/throttle.md)
 * [noop](./docs/fp/noop.md)
 * [run](./docs/fp/run.md)
 * [if](./docs/fp/if.md)

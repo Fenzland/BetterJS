@@ -87,6 +87,7 @@ export default [
 	'./fp/await.js',
 	'./fp/valve.js',
 	'./fp/debounce.js',
+	'./fp/throttle.js',
 	'./fp/noop.js',
 	'./fp/run.js',
 	'./fp/if.js',
