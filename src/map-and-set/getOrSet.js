@@ -1,3 +1,4 @@
+import '../object/isPrimitive.js';
 
 /**
  * Get a value from Map or WeakMap, if not has, 
@@ -29,6 +30,9 @@ Reflect.defineProperty( WeakMap.prototype, 'getOrSet', {
 		else
 		{
 			const value= generator();
+			
+			if( Object.isPrimitive( key, ) )
+				return value;
 			
 			this.set( key, value, );
 			

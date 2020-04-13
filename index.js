@@ -41,7 +41,7 @@ import './src/array-prototype/shuffle-and-shuffled.js';
 import './src/map-and-set/map-from-and-to-object.js';
 import './src/map-and-set/better-modifications.js';
 import './src/map-and-set/better-entries.js';
-import './src/map-and-set/getOrSet.js';
+import './src/map-and-set/getOrSet.js'; // DEP:object/isPrimitive.js
 import './src/map-and-set/put.js';
 import './src/map-and-set/pop.js';
 import './src/map-and-set/map.js';
