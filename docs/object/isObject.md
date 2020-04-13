@@ -1,6 +1,6 @@
 # Object.isObject
 
-There is a incredible fact that JavaScript has on simple way to detect whether a value is on object. 
+There is a incredible fact that JavaScript has on simple way to detect whether a value is an object. 
 
 There are some alternative way, but all of them with troubles.
 
@@ -12,9 +12,15 @@ There are some alternative way, but all of them with troubles.
 ```javascript
 import 'https://better-js.fenz.land/src/object/isObject.js';
 
+Object.isObject( true, );                   // false
 Object.isObject( 1, );                      // false
-Object.isObject( new Number( 1 ), );        // true
+Object.isObject( 1n, );                     // false
+Object.isObject( 'string', );               // false
+Object.isObject( Symbol( 'string', ), );    // false
+Object.isObject( undefined, );              // false
 Object.isObject( null, );                   // false
+Object.isObject( new Number( 1 ), );        // true
+Object.isObject( [], );                     // true
 Object.isObject( {}, );                     // true
 Object.isObject( Object.create( null, ), ); // true
 Object.isObject( await import (url), );     // true
