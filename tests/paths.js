@@ -55,6 +55,7 @@ export default [
 	'./map-and-set/mapAndFilter.js',
 	'./event-target-prototype/listener-control.js',
 	'./object/isObject.js',
+	'./object/isPrimitive.js',
 	'./object/isPureObject.js',
 	'./object/better-frozen.js',
 	'./object/areSame.js',
