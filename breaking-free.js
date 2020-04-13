@@ -43,15 +43,16 @@ import './src/map-and-set/mapAwait.js';
 import './src/map-and-set/flatMapAwait.js';
 import './src/map-and-set/mapAndFilter.js'; // DEP: map-and-set/reduce.js
 import './src/event-target-prototype/listener-control.breaking-free.js'; // DEP: map-and-set/getOrSet.js
-import './src/object/isObject-and-isPureObject.js';
-import './src/object/areSame.js'; // DEP: object/isObject-and-isPureObject.js
+import './src/object/isObject.js';
+import './src/object/isPureObject.js'; // DEP:object/isObject.js
+import './src/object/areSame.js'; // DEP: object/isObject.js
 import './src/object/haveOwnProperty.js';
 import './src/object/bePrototypeOf.js';
 import './src/object/propertyBeEnumerable.js';
 import './src/object/map.js';
 import './src/object/get-and-set.js'; // DEP: object/haveOwnProperty.js
 import './src/object/deeplyGet-and-deeplySet.js'; // DEP: object/haveOwnProperty.js
-import './src/object/deeplyAssign.js'; // DEP: object/isObject-and-isPureObject.js map-and-set/getOrSet.js
+import './src/object/deeplyAssign.js'; // DEP: object/isObject.js map-and-set/getOrSet.js
 import './src/function/isXXX.js';
 import './src/generator/for.js'; // DEP: global-constructors.js
 import './src/generator/range.js'; // DEP: generator/for.js
