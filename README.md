@@ -80,6 +80,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Object.haveOwnProperty, Object.bePrototypeOf, Object.propertyBeEnumerable](./docs/object/staticize.md)
 * [Object.map](./docs/object/map.md)
 * [Object.get and Object.set](./docs/object/get-and-set.md)
+* [better frozen](./docs/object/better-frozen.md) (breaking)
 
 #### Function
 
