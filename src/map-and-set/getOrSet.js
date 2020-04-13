@@ -6,7 +6,7 @@ import '../object/isPrimitive.js';
  */
 
 Reflect.defineProperty( Map.prototype, 'getOrSet', {
-	value( key, generator, afterSetted=undefined, ){
+	value( key, generator, afterSetting=undefined, ){
 		if( this.has( key, ) )
 			return this.get( key, );
 		else
@@ -15,8 +15,8 @@ Reflect.defineProperty( Map.prototype, 'getOrSet', {
 			
 			this.set( key, value, );
 			
-			if( afterSetted )
-				afterSetted( value, );
+			if( afterSetting )
+				afterSetting( value, );
 			
 			return value;
 		}
@@ -24,7 +24,7 @@ Reflect.defineProperty( Map.prototype, 'getOrSet', {
 }, );
 
 Reflect.defineProperty( WeakMap.prototype, 'getOrSet', {
-	value( key, generator, afterSetted=undefined, ){
+	value( key, generator, afterSetting=undefined, ){
 		if( this.has( key, ) )
 			return this.get( key, );
 		else
@@ -36,8 +36,8 @@ Reflect.defineProperty( WeakMap.prototype, 'getOrSet', {
 			
 			this.set( key, value, );
 			
-			if( afterSetted )
-				afterSetted( value, );
+			if( afterSetting )
+				afterSetting( value, );
 			
 			return value;
 		}
