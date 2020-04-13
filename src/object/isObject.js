@@ -7,5 +7,5 @@
  * @return (boolean)
  */
 Reflect.defineProperty( Object, 'isObject', {
-	value: value=> (typeof value === 'object' && value !== null) || typeof value === 'function',
+	value: value=> Object (value) === value,
 }, );
