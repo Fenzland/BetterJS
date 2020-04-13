@@ -106,6 +106,7 @@ But a breaking-free feature will never depend on a breaking feature.
 
 * [better forEach](./docs/array-prototype/forEach-fix.md) (breaking)
 * [sequentially async iterators](./docs/array-prototype/sequentially-async-iterators.md)
+= [convolute](./docs/array-prototype/convolute.md)
 * [get and set](./docs/array-prototype/get-and-set.md)
 * [subArray](./docs/array-prototype/subArray.md)
 * [findLast and findLastIndex](./docs/array-prototype/find-last.md)
