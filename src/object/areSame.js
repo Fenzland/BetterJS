@@ -1,4 +1,4 @@
-import './isObject-and-isPureObject.js';
+import './isPureObject.js';
 
 /**
  * check wheather two values same:

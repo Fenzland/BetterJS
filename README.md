@@ -70,9 +70,14 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Number.equal](./docs/number/equal.md)
 * [Number.or](./docs/number/or.md)
 
+#### BigInt
+
+* [toJSON](./docs/bigint-prototype/toJSON.md)
+
 #### Object
 
 * [Object.isObject](./docs/object/isObject.md)
+* [Object.isPrimitive](./docs/object/isPrimitive.md)
 * [Object.isPureObject](./docs/object/isPureObject.md)
 * [Object.areSame](./docs/object/areSame.md)
 * [Object.deeplyGet and Object.deeplySet](./docs/object/deeplyGet-and-deeplySet.md)
@@ -80,6 +85,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Object.haveOwnProperty, Object.bePrototypeOf, Object.propertyBeEnumerable](./docs/object/staticize.md)
 * [Object.map](./docs/object/map.md)
 * [Object.get and Object.set](./docs/object/get-and-set.md)
+* [better frozen](./docs/object/better-frozen.md) (breaking)
 
 #### Function
 
@@ -105,6 +111,7 @@ But a breaking-free feature will never depend on a breaking feature.
 
 * [better forEach](./docs/array-prototype/forEach-fix.md) (breaking)
 * [sequentially async iterators](./docs/array-prototype/sequentially-async-iterators.md)
+= [convolute](./docs/array-prototype/convolute.md)
 * [get and set](./docs/array-prototype/get-and-set.md)
 * [subArray](./docs/array-prototype/subArray.md)
 * [findLast and findLastIndex](./docs/array-prototype/find-last.md)
@@ -123,7 +130,7 @@ But a breaking-free feature will never depend on a breaking feature.
 #### Map and Set
 
 * [convert between maps and objects](./docs/map-and-set/map-from-and-to-object.md)
-* [better set and add](./docs/map-and-set/better-set-and-add.md) (breaking)
+* [better modifications](./docs/map-and-set/better-modifications.md) (breaking)
 * [better entries, keys and values](./docs/map-and-set/better-entries.md) (breaking)
 * [getOrSet](./docs/map-and-set/getOrSet.md)
 * [put](./docs/map-and-set/put.md)

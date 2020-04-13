@@ -20,10 +20,12 @@ import './src/async-generator-prototype/forEach.js'; // DEP: global-constructors
 import './src/string-prototype/matchGroup.js';
 import './src/string-prototype/toXXXCase.js';
 import './src/string-prototype/find-index.js';
+import './src/bigint-prototype/toJSON.js';
 import './src/array-prototype/forEach-fix.js';
 import './src/array-prototype/forEachAwait.js';
 import './src/array-prototype/mapAwait.js';
 import './src/array-prototype/flatMapAwait.js';
+import './src/array-prototype/convolute.js';
 import './src/array-prototype/get-and-subArray.js';
 import './src/array-prototype/set.js';
 import './src/array-prototype/finding.js';
@@ -37,7 +39,7 @@ import './src/array-prototype/reversed.js';
 import './src/array-prototype/sorted.js';
 import './src/array-prototype/shuffle-and-shuffled.js';
 import './src/map-and-set/map-from-and-to-object.js';
-import './src/map-and-set/better-set-and-add.js';
+import './src/map-and-set/better-modifications.js';
 import './src/map-and-set/better-entries.js';
 import './src/map-and-set/getOrSet.js';
 import './src/map-and-set/put.js';
@@ -50,15 +52,18 @@ import './src/map-and-set/mapAwait.js';
 import './src/map-and-set/flatMapAwait.js';
 import './src/map-and-set/mapAndFilter.js'; // DEP: map-and-set/reduce.js
 import './src/event-target-prototype/listener-control.js'; // DEP: map-and-set/getOrSet.js
-import './src/object/isObject-and-isPureObject.js';
-import './src/object/areSame.js'; // DEP: object/isObject-and-isPureObject.js
+import './src/object/isObject.js';
+import './src/object/isPrimitive.js';
+import './src/object/isPureObject.js'; // DEP:object/isObject.js
+import './src/object/better-frozen.js'; // DEP:object/isObject.js
+import './src/object/areSame.js'; // DEP: object/isPureObject.js
 import './src/object/haveOwnProperty.js';
 import './src/object/bePrototypeOf.js';
 import './src/object/propertyBeEnumerable.js';
 import './src/object/map.js';
-import './src/object/get-and-set.js'; // DEP: object/haveOwnProperty.js
+import './src/object/get-and-set.js'; // DEP: object/haveOwnProperty.js, object/isObject.js
 import './src/object/deeplyGet-and-deeplySet.js'; // DEP: object/haveOwnProperty.js
-import './src/object/deeplyAssign.js'; // DEP: object/isObject-and-isPureObject.js map-and-set/getOrSet.js
+import './src/object/deeplyAssign.js'; // DEP: object/isObject.js map-and-set/getOrSet.js
 import './src/function/isXXX.js';
 import './src/generator/for.js'; // DEP: global-constructors.js
 import './src/generator/range.js'; // DEP: generator/for.js

@@ -1,4 +1,4 @@
-import './isObject-and-isPureObject.js';
+import './isObject.js';
 import '../map-and-set/getOrSet.js';
 
 /**

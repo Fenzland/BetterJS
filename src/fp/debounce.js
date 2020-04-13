@@ -12,7 +12,7 @@ Reflect.defineProperty( Function.prototype, 'debounce', {
 			if( process !== undefined )
 				clearTimeout( process, );
 			else
-				window.taueee= promise= Promise.make();
+				promise= Promise.make();
 			
 			process= setTimeout( ()=> {
 				try
