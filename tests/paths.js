@@ -22,6 +22,7 @@ export default [
 	'./string-prototype/matchGroup.js',
 	'./string-prototype/toXXXCase.js',
 	'./string-prototype/find-index.js',
+	'./bigint-prototype/toJSON.js',
 	'./array-prototype/forEach-fix.js',
 	'./array-prototype/forEachAwait.js',
 	'./array-prototype/mapAwait.js',
