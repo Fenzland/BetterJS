@@ -24,6 +24,7 @@ import './src/array-prototype/forEach-fix.js';
 import './src/array-prototype/forEachAwait.js';
 import './src/array-prototype/mapAwait.js';
 import './src/array-prototype/flatMapAwait.js';
+import './src/array-prototype/convolute.js';
 import './src/array-prototype/get-and-subArray.js';
 import './src/array-prototype/set.js';
 import './src/array-prototype/finding.js';
