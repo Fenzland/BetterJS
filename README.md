@@ -77,6 +77,7 @@ But a breaking-free feature will never depend on a breaking feature.
 #### Object
 
 * [Object.isObject](./docs/object/isObject.md)
+* [Object.isPrimitive](./docs/object/isPrimitive.md)
 * [Object.isPureObject](./docs/object/isPureObject.md)
 * [Object.areSame](./docs/object/areSame.md)
 * [Object.deeplyGet and Object.deeplySet](./docs/object/deeplyGet-and-deeplySet.md)
