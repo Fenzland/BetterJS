@@ -10,7 +10,7 @@ There are some alternative way, but all of them with troubles.
 ## Usage
 
 ```javascript
-import 'https://better-js.fenz.land/src/object/isObject-and-isPureObject.js';
+import 'https://better-js.fenz.land/src/object/isObject.js';
 
 Object.isObject( 1, );                      // false
 Object.isObject( new Number( 1 ), );        // true
