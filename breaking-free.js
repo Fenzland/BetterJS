@@ -66,6 +66,7 @@ import './src/array/concat.js';
 import './src/promise/any.js';
 import './src/promise/try.js'; // DEP: SyncPromise.js
 import './src/promise/make.js';
+import './src/promise/queue.js'; // DEP: global-constructors.js, promise/make.js
 import './src/number.js';
 import './src/math.js';
 import './src/console.js';

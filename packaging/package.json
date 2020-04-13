@@ -1,0 +1,26 @@
+{
+  "name": "better-js",
+  "version": "0.20.11",
+  "description": "Make JS better",
+  "main": "packaged/index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Fenzland@github.com/Fenzland/BetterJS.git"
+  },
+  "keywords": [
+    "better-js"
+  ],
+  "author": "Fenzland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Fenzland/BetterJS/issues"
+  },
+  "homepage": "https://github.com/Fenzland/BetterJS#readme"
+}

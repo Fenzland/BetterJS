@@ -19,6 +19,13 @@ const anchor= '<a href="https://better-js.fenz.land/"></a>';
 const href= anchor.matchGroup( /href="([^"]*)"/, 1, );
 ```
 
+TypeScript is also available (require TypeScript >= 3.7):
+```typescript
+import 'https://better-js.fenz.land/index.ts';
+
+const π:number= Math.π;
+```
+
 Or you can only use specific feature like below. 
 ```javascript
 import 'https://better-js.fenz.land/src/promisive.js';

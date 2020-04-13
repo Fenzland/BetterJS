@@ -5,11 +5,11 @@ const tester= new Robberfly();
 
 tester.addPath( ...paths, );
 
-const $results= tester.runIsoEach();
+// const $results= tester.runIso();
 
 export default async function main()
 {
-	return (await $results).print();
+	// return (await $results).print();
 }
 
 if( import.meta.main )
