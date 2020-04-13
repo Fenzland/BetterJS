@@ -53,6 +53,7 @@ import './src/map-and-set/flatMapAwait.js';
 import './src/map-and-set/mapAndFilter.js'; // DEP: map-and-set/reduce.js
 import './src/event-target-prototype/listener-control.js'; // DEP: map-and-set/getOrSet.js
 import './src/object/isObject.js';
+import './src/object/isPrimitive.js';
 import './src/object/isPureObject.js'; // DEP:object/isObject.js
 import './src/object/better-frozen.js'; // DEP:object/isObject.js
 import './src/object/areSame.js'; // DEP: object/isPureObject.js
