@@ -70,6 +70,10 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Number.equal](./docs/number/equal.md)
 * [Number.or](./docs/number/or.md)
 
+#### BigInt
+
+* [toJSON](./docs/bigint-prototype/toJSON.md)
+
 #### Object
 
 * [Object.isObject](./docs/object/isObject.md)
