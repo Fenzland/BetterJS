@@ -20,6 +20,7 @@ import './src/async-generator-prototype/forEach.js'; // DEP: global-constructors
 import './src/string-prototype/matchGroup.js';
 import './src/string-prototype/toXXXCase.js';
 import './src/string-prototype/find-index.js';
+import './src/bigint-prototype/toJSON.js';
 import './src/array-prototype/forEach-fix.js';
 import './src/array-prototype/forEachAwait.js';
 import './src/array-prototype/mapAwait.js';
