@@ -34,6 +34,11 @@ test( '{Array}.findIdx', ( { assertBe, }, )=> {
 	
 	assertBe( array.findIdx( x=> x > 2, ), 2, );
 	assertBe( array.findIdx( x=> x < 0, ), NaN, );
+	assertBe( array.findIdx( x=> x > 2? -1: false, ), 1, );
+	assertBe( array.findIdx( x=> x > 2? 3: false, ), 5, );
+	assertBe( array.findIdx( x=> x > 2? 0: false, ), 2, );
+	assertBe( array.findIdx( x=> x > 2? -9: false, ), 0, );
+	assertBe( array.findIdx( x=> x > 2? 8: false, ), 6, );
 }, );
 
 test( '{Array}.findLastIdx', ( { assertBe, }, )=> {
@@ -41,6 +46,11 @@ test( '{Array}.findLastIdx', ( { assertBe, }, )=> {
 	
 	assertBe( array.findLastIdx( x=> x > 2, ), 5, );
 	assertBe( array.findLastIdx( x=> x < 0, ), NaN, );
+	assertBe( array.findLastIdx( x=> x > 2? -1: false, ), 4, );
+	assertBe( array.findLastIdx( x=> x > 2? 1: false, ), 6, );
+	assertBe( array.findLastIdx( x=> x > 2? 0: false, ), 5, );
+	assertBe( array.findLastIdx( x=> x > 2? 8: false, ), 6, );
+	assertBe( array.findLastIdx( x=> x > 2? -8: false, ), 0, );
 }, );
 
 test( '{Array}.seek', ( { assertBe, }, )=> {
