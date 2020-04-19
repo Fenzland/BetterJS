@@ -59,6 +59,7 @@ export default [
 	'./object/isPrimitive.js',
 	'./object/isPureObject.js',
 	'./object/better-frozen.js',
+	'./object/equal.js',
 	'./object/areSame.js',
 	'./object/haveOwnProperty.js',
 	'./object/bePrototypeOf.js',
