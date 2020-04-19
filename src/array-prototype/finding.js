@@ -24,7 +24,7 @@ Reflect.defineProperty( Array.prototype, 'idxOf', {
 	value( searchElement, fromIndex=0, ){
 		const index= this.indexOf( searchElement, fromIndex, );
 		
-		return index === -1? NaN: index;
+		return index === -1? undefined: index;
 	},
 }, );
 
@@ -32,7 +32,7 @@ Reflect.defineProperty( Array.prototype, 'lastIdxOf', {
 	value( searchElement, fromIndex=Infinity, ){
 		const index= this.lastIndexOf( searchElement, fromIndex, );
 		
-		return index === -1? NaN: index;
+		return index === -1? undefined: index;
 	},
 }, );
 
@@ -52,7 +52,7 @@ Reflect.defineProperty( Array.prototype, 'findIdx', {
 		}, );
 		
 		if( index === -1 )
-			return NaN;
+			return undefined;
 		
 		index-=- offset;
 		
@@ -80,7 +80,7 @@ Reflect.defineProperty( Array.prototype, 'findLastIdx', {
 		}, );
 		
 		if( index === -1 )
-			return NaN;
+			return undefined;
 		
 		index-=- offset;
 		
@@ -96,7 +96,7 @@ Reflect.defineProperty( Array.prototype, 'seek', {
 	value( predicate, deflt=undefined, ){
 		const idx= this.findIdx( predicate, );
 		
-		return Number.isNaN( idx, )? deflt: this[idx];
+		return idx!==undefined? this[idx]: deflt;
 	},
 }, );
 
@@ -104,7 +104,7 @@ Reflect.defineProperty( Array.prototype, 'seekLast', {
 	value( predicate, deflt=undefined, ){
 		const idx= this.findLastIdx( predicate, );
 		
-		return Number.isNaN( idx, )? deflt: this[idx];
+		return idx!==undefined? this[idx]: deflt;
 	},
 }, );
 
