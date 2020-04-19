@@ -47,6 +47,7 @@ import './src/event-target-prototype/listener-control.breaking-free.js'; // DEP:
 import './src/object/isObject.js';
 import './src/object/isPrimitive.js';
 import './src/object/isPureObject.js'; // DEP:object/isObject.js
+import './src/object/equal.js';
 import './src/object/areSame.js'; // DEP: object/isObject.js
 import './src/object/haveOwnProperty.js';
 import './src/object/bePrototypeOf.js';

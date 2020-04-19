@@ -57,6 +57,7 @@ import './src/object/isObject.js';
 import './src/object/isPrimitive.js';
 import './src/object/isPureObject.js'; // DEP:object/isObject.js
 import './src/object/better-frozen.js'; // DEP:object/isObject.js
+import './src/object/equal.js';
 import './src/object/areSame.js'; // DEP: object/isPureObject.js
 import './src/object/haveOwnProperty.js';
 import './src/object/bePrototypeOf.js';
