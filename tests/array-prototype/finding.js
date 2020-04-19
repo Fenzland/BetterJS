@@ -19,21 +19,21 @@ test( '{Array}.idxOf', ( { assertBe, }, )=> {
 	const array= [ 1, 2, 3, 4, 3, 2.1, 1, ];
 	
 	assertBe( array.idxOf( 3, ), 2, );
-	assertBe( array.idxOf( -3, ), NaN, );
+	assertBe( array.idxOf( -3, ), undefined, );
 }, );
 
 test( '{Array}.lastIdxOf', ( { assertBe, }, )=> {
 	const array= [ 1, 2, 3, 4, 3, 2.1, 1, ];
 	
 	assertBe( array.lastIdxOf( 3, ), 4, );
-	assertBe( array.lastIdxOf( -3, ), NaN, );
+	assertBe( array.lastIdxOf( -3, ), undefined, );
 }, );
 
 test( '{Array}.findIdx', ( { assertBe, }, )=> {
 	const array= [ 1, 2, 3, 4, 3, 2.1, 1, ];
 	
 	assertBe( array.findIdx( x=> x > 2, ), 2, );
-	assertBe( array.findIdx( x=> x < 0, ), NaN, );
+	assertBe( array.findIdx( x=> x < 0, ), undefined, );
 	assertBe( array.findIdx( x=> x > 2? -1: false, ), 1, );
 	assertBe( array.findIdx( x=> x > 2? 3: false, ), 5, );
 	assertBe( array.findIdx( x=> x > 2? 0: false, ), 2, );
@@ -45,7 +45,7 @@ test( '{Array}.findLastIdx', ( { assertBe, }, )=> {
 	const array= [ 1, 2, 3, 4, 3, 2.1, 1, ];
 	
 	assertBe( array.findLastIdx( x=> x > 2, ), 5, );
-	assertBe( array.findLastIdx( x=> x < 0, ), NaN, );
+	assertBe( array.findLastIdx( x=> x < 0, ), undefined, );
 	assertBe( array.findLastIdx( x=> x > 2? -1: false, ), 4, );
 	assertBe( array.findLastIdx( x=> x > 2? 1: false, ), 6, );
 	assertBe( array.findLastIdx( x=> x > 2? 0: false, ), 5, );
