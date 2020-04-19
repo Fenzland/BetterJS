@@ -5,6 +5,15 @@ test( 'Number.ε', ( { assertBe, }, )=> {
 	assertBe( Number.ε, Number.EPSILON, );
 }, );
 
+test( 'Number.MAX_BITWISE_INTEGER', ( { assertBe, assertNotBe, }, )=> {
+	assertBe( Number.MAX_BITWISE_INTEGER & -1, Number.MAX_BITWISE_INTEGER, );
+	assertNotBe( (Number.MAX_BITWISE_INTEGER - - 1) & -1, Number.MAX_BITWISE_INTEGER, );
+}, );
+test( 'Number.MIN_BITWISE_INTEGER', ( { assertBe, assertNotBe, }, )=> {
+	assertBe( Number.MIN_BITWISE_INTEGER & -1, Number.MIN_BITWISE_INTEGER, );
+	assertNotBe( (Number.MIN_BITWISE_INTEGER - 1) & -1, Number.MIN_BITWISE_INTEGER, );
+}, );
+
 test( 'Number.isInfinite', ( { assertBe, }, )=> {
 	assertBe( Number.isInfinite( 0, ), false, );
 	assertBe( Number.isInfinite( 8, ), false, );
