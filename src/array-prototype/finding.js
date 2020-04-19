@@ -38,17 +38,57 @@ Reflect.defineProperty( Array.prototype, 'lastIdxOf', {
 
 Reflect.defineProperty( Array.prototype, 'findIdx', {
 	value( predicate, ){
-		const index= this.findIndex( predicate, );
+		let offset= 0;
 		
-		return index === -1? NaN: index;
+		let index= this.findIndex( ( ...args )=> {
+			const value= predicate( ...args, );
+			
+			if( typeof value !== 'number' )
+				return value;
+			
+			offset-=- value;
+			
+			return true;
+		}, );
+		
+		if( index === -1 )
+			return NaN;
+		
+		index-=- offset;
+		
+		return (
+			index < 0? 0:
+			index >= this.length? this.length - 1:
+			index
+		);
 	},
 }, );
 
 Reflect.defineProperty( Array.prototype, 'findLastIdx', {
 	value( predicate, ){
-		const index= this.findLastIndex( predicate, );
+		let offset= 0;
 		
-		return index === -1? NaN: index;
+		let index= this.findLastIndex( ( ...args )=> {
+			const value= predicate( ...args, );
+			
+			if( typeof value !== 'number' )
+				return value;
+			
+			offset-=- value;
+			
+			return true;
+		}, );
+		
+		if( index === -1 )
+			return NaN;
+		
+		index-=- offset;
+		
+		return (
+			index < 0? 0:
+			index >= this.length? this.length - 1:
+			index
+		);
 	},
 }, );
 
