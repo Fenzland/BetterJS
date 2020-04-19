@@ -33,6 +33,7 @@ export default [
 	'./array-prototype/finding.js',
 	'./array-prototype/mapAndFilter.js',
 	'./array-prototype/implode-and-feed.js',
+	'./array-prototype/better-slice.js',
 	'./array-prototype/better-reduce.js',
 	'./array-prototype/better-entries.js',
 	'./array-prototype/popped-pushed-shifted-unshifted.js',
