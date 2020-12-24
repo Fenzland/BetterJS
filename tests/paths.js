@@ -41,6 +41,7 @@ export default [
 	'./array-prototype/reversed.js',
 	'./array-prototype/sorted.js',
 	'./array-prototype/shuffle-and-shuffled.js',
+	'./array-prototype/undup.js',
 	'./map-and-set/map-from-and-to-object.js',
 	'./map-and-set/better-modifications.js',
 	'./map-and-set/better-entries.js',
