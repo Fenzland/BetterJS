@@ -39,6 +39,7 @@ import './src/array-prototype/spliced.js';
 import './src/array-prototype/reversed.js';
 import './src/array-prototype/sorted.js';
 import './src/array-prototype/shuffle-and-shuffled.js';
+import './src/array-prototype/undup.js'; // DEP: object/equal.js
 import './src/map-and-set/map-from-and-to-object.js';
 import './src/map-and-set/better-modifications.js';
 import './src/map-and-set/better-entries.js';
@@ -57,6 +58,7 @@ import './src/object/isObject.js';
 import './src/object/isPrimitive.js';
 import './src/object/isPureObject.js'; // DEP:object/isObject.js
 import './src/object/better-frozen.js'; // DEP:object/isObject.js
+import './src/object/equal.js';
 import './src/object/areSame.js'; // DEP: object/isPureObject.js
 import './src/object/haveOwnProperty.js';
 import './src/object/bePrototypeOf.js';

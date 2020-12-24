@@ -69,6 +69,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Number.isInfinite](./docs/number/isInfinite.md)
 * [Number.equal](./docs/number/equal.md)
 * [Number.or](./docs/number/or.md)
+* [Number.MAX_BITWISE_INTEGER and Number.MIN_BITWISE_INTEGER](./docs/number/max-and-min-bitwise-integen.md)
 
 #### BigInt
 
@@ -79,6 +80,7 @@ But a breaking-free feature will never depend on a breaking feature.
 * [Object.isObject](./docs/object/isObject.md)
 * [Object.isPrimitive](./docs/object/isPrimitive.md)
 * [Object.isPureObject](./docs/object/isPureObject.md)
+* [Object.equal](./docs/object/equal.md)
 * [Object.areSame](./docs/object/areSame.md)
 * [Object.deeplyGet and Object.deeplySet](./docs/object/deeplyGet-and-deeplySet.md)
 * [Object.deeplyAssign](./docs/object/deeplyAssign.md)

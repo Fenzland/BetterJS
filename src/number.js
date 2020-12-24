@@ -1,6 +1,9 @@
 
 Reflect.defineProperty( Number, 'ε', { value:Number.EPSILON, }, );
 
+Reflect.defineProperty( Number, 'MAX_BITWISE_INTEGER', { value:(-1)>>>1, }, );
+Reflect.defineProperty( Number, 'MIN_BITWISE_INTEGER', { value:~Number.MIN_BITWISE_INTEGER, }, );
+
 /**
  * Check wheather a number is infinity
  * 
