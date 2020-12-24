@@ -32,6 +32,7 @@ import './src/array-prototype/spliced.js';
 import './src/array-prototype/reversed.js';
 import './src/array-prototype/sorted.js';
 import './src/array-prototype/shuffle-and-shuffled.js';
+import './src/array-prototype/undup.js'; // DEP: object/equal.js
 import './src/map-and-set/map-from-and-to-object.js';
 import './src/map-and-set/getOrSet.js'; // DEP:object/isPrimitive.js
 import './src/map-and-set/put.js';
