@@ -1,4 +1,4 @@
-# accessible AsyncFunction, GeneratorFunction and AsyncGeneratorFunction
+# accessible AsyncFunction, GeneratorFunction, AsyncGeneratorFunction, Generator and AsyncGenerator
 
 BetterJS let you access AsyncFunction, GeneratorFunction, AsyncGeneratorFunction 
 Generator and AsyncGenerator with global scope. 

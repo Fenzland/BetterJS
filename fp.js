@@ -1,5 +1,5 @@
 import './src/fp/pipeline-operator-hack.js';
-import './src/fp/bind-syntax-hack.js';
+import './src/fp/bind-syntax-hack.js'; // DEP:WeakTree.js
 import './src/fp/compose.js';
 import './src/fp/prepare.js';
 import './src/fp/curry.js';

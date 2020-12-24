@@ -3,7 +3,7 @@ import '../src/console.js';
 
 test( 'console', ( { assertBe, }, )=> {
 	
-	console.groupCollapsed( 'console-testing', )
+	console.groupCollapsed( 'console-testing', );
 	
 	assertBe( console.log( ' ', ), ' ', );
 	assertBe( console.info( ' ', ), ' ', );

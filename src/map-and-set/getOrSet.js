@@ -43,4 +43,3 @@ Reflect.defineProperty( WeakMap.prototype, 'getOrSet', {
 		}
 	},
 }, );
-

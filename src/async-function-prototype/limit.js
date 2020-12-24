@@ -5,18 +5,16 @@ Reflect.defineProperty( AsyncFunction.prototype, 'limit', {
 		let counter= 0;
 		
 		const limitted= async ( ...args )=> {
-			let result= undefined;
-			
 			if( counter < limit )
 			{
 				++counter;
 				
-				result= await this( ...args, )
+				return this( ...args, )
 					.finally( ()=> --counter, )
 				;
 			}
-			
-			return result;
+			else
+				return undefined;
 		};
 		
 		Reflect.defineProperty( limitted, 'length', { value:this.length, }, );

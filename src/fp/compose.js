@@ -1,7 +1,11 @@
 
 Reflect.defineProperty( Function, 'pipe', {
-	value( ...functions ){
-		return functions.reduce( ( value, func, )=> $=> func( value( $, ), ), $=> $, );
+	value( first, ...functions ){
+		const result= functions.reduce( ( value, func, )=> ( ...args )=> func( value( ...args, ), ), ( ...args )=> first( ...args, ), );
+		
+		Reflect.defineProperty( result, 'length', { value:first.length, }, );
+		
+		return result;
 	},
 }, );
 
@@ -12,8 +16,12 @@ Reflect.defineProperty( Function, 'compose', {
 }, );
 
 Reflect.defineProperty( Function, 'asyncPipe', {
-	value( ...functions ){
-		return functions.reduce( ( value, func, )=> async $=> func( await value( $, ), ), async $=> $, );
+	value( first, ...functions ){
+		const result= functions.reduce( ( value, func, )=> async ( ...args )=> func( await value( ...args, ), ), async ( ...args )=> first( ...args, ), );
+		
+		Reflect.defineProperty( result, 'length', { value:first.length, }, );
+		
+		return result;
 	},
 }, );
 

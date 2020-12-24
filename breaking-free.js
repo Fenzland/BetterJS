@@ -70,4 +70,6 @@ import './src/number.js';
 import './src/math.js';
 import './src/console.js';
 import './src/types.js'; // DEP: function/isXXX.js
+import './src/RetracedMap.js';
+import './src/WeakTree.js'; // DEP:map-and-set/getOrSet.js
 import './fp.js';

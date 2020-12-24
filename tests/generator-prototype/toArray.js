@@ -6,7 +6,7 @@ test( '{Generator}.toArray', ( { assertAs, }, )=> {
 		yield 0;
 		yield 1;
 		yield* [ 2, 3, 4, ];
-	}
+	};
 	
 	assertAs( gf().toArray(), [ 0, 1, 2, 3, 4, ], );
 }, );

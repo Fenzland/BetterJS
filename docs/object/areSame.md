@@ -1,6 +1,6 @@
 # Object.areSame
 
-BetterJS provide a better way to compare two values: `Object.areSame`. 
+BetterJS provide `Object.areSame` to compare two values with structure. 
 
 
 ## Usage

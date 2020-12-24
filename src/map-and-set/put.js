@@ -1,7 +1,7 @@
 
 Reflect.defineProperty( Map.prototype, 'put', {
 	value: function put( entries, ){
-		for( const [ key, value, ] of entries )
+		for( const { 0:key, 1:value, } of entries )
 			this.set( key, value, );
 	},
 }, );
@@ -15,7 +15,7 @@ Reflect.defineProperty( Set.prototype, 'put', {
 
 Reflect.defineProperty( WeakMap.prototype, 'put', {
 	value: function put( entries, ){
-		for( const [ key, value, ] of entries )
+		for( const { 0:key, 1:value, } of entries )
 			this.set( key, value, );
 	},
 }, );

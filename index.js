@@ -8,10 +8,12 @@ import './src/global-constructors-fix.js'; // DEP: global-constructors.js
 import './src/function-prototype/new.js';
 import './src/function-prototype/rename.js';
 import './src/async-function-prototype/limit.js'; // DEP: global-constructors.js
+import './src/async-function-prototype/concurrent.js'; // DEP: global-constructors.js, promise/make.js
 import './src/generator-function/toIterator.js'; // DEP: global-constructors.js
 import './src/generator-prototype/toArray.js'; // DEP: global-constructors.js
 import './src/generator-prototype/map.js'; // DEP: global-constructors.js
 import './src/generator-prototype/forEach.js'; // DEP: global-constructors.js
+import './src/async-generator-prototype/nextValue.js'; // DEP: global-constructors.js
 import './src/async-generator-prototype/toArray.js'; // DEP: global-constructors.js
 import './src/async-generator-prototype/mapAwait.js'; // DEP: global-constructors.js
 import './src/async-generator-prototype/forEachAwait.js'; // DEP: global-constructors.js
@@ -70,16 +72,18 @@ import './src/object/deeplyAssign.js'; // DEP: object/isObject.js map-and-set/ge
 import './src/function/isXXX.js';
 import './src/generator/for.js'; // DEP: global-constructors.js
 import './src/generator/range.js'; // DEP: generator/for.js
+import './src/async-generator/mix.js'; // DEP: global-constructors.js
 import './src/string/compare.js';
 import './src/string/concat.js';
 import './src/array/concat.js';
 import './src/promise/binded.js';
 import './src/promise/better-allSettled.js';
-import './src/promise/any.js';
 import './src/promise/try.js'; // DEP: SyncPromise.js
 import './src/promise/make.js';
 import './src/number.js';
 import './src/math.js';
 import './src/console.js';
 import './src/types.js'; // DEP: function/isXXX.js
+import './src/RetracedMap.js';
+import './src/WeakTree.js'; // DEP:map-and-set/getOrSet.js
 import './fp.js';
